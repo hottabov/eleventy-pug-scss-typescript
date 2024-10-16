@@ -226,10 +226,10 @@
     // Hamburger Menu Default State
     .hamburger-menu {
       position: absolute;
-      right: ( 0 / 16) * 1rem;
+      right: 0;
       border: none;
-      height: ( 48 / 16) * 1rem;
-      width: ( 48 / 16) * 1rem;
+      height: toRem(48);
+      width: toRem(48);
       z-index: 100;
       display: block;
       background: transparent;
@@ -240,7 +240,7 @@
 
       span {
         height: 2px;
-        width: ( 30 / 16) * 1rem;
+        width: toRem(30);
         background-color: #000;
         display: block;
         position: absolute;
@@ -309,12 +309,12 @@
       right: 0;
       padding: 0;
       width: 100%;
-      border-radius: 0 0 ( 6 / 16) * 1rem ( 6 / 16) * 1rem;
+      border-radius: 0 0 toRem(6) toRem(6);
       z-index: -1;
       overflow: hidden;
       box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
       background-color: #fff;
-      top: ( 59 / 16 ) * 1rem; // same as #navigation height
+      top: toRem(59); // same as #navigation height
 
       //Transition Properties
       height: 0;
@@ -327,12 +327,12 @@
 
         li {
           list-style: none;
-          margin-bottom: ( 24 / 16) * 1rem;
+          margin-bottom: toRem(24);
           text-align: center;
           //Transition Properties
           transform-style: preserve-3d;
           opacity: 0;
-          transform: translateY(( -7 / 16) * 1rem rotateX(90deg));
+          transform: translateY(toRem(-7) rotateX(90deg));
           transition: opacity .5s, transform .5s;
 
           //Staggar their transitions
@@ -368,7 +368,7 @@
             text-decoration: none;
             text-transform: uppercase;
             color: #000;
-            font-size: ( 19 / 16) * 1rem;
+            font-size: toRem(19);
             text-align: center;
             display: inline-block;
             position: relative;
@@ -380,13 +380,13 @@
                 content: '';
                 position: absolute;
                 display: block;
-                height: ( 8 / 16) * 1rem;
+                height: toRem(8);
                 background: var(--primary);
                 opacity: 1;
-                bottom: ( 5 / 16) * 1rem;
-                border-radius: ( 4 / 16) * 1rem;
-                left: ( -6 / 16) * 1rem;
-                right: ( -6 / 16) * 1rem;
+                bottom: toRem(5);
+                border-radius: toRem(4);
+                left: toRem(-6);
+                right: toRem(-6);
                 z-index: -1;
               }
             }
