@@ -1,0 +1,252 @@
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0em) {
+
+  #gallery {
+    /* Centers button */
+    text-align: center;
+    padding: var(--sectionPadding);
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+
+    .cs-container {
+      width: 100%;
+      max-width: (1322/16)*1em;
+      margin: auto;
+    }
+
+    .cs-image-group {
+      /* used rem so it doesn't scale with the font size of on parent */
+      font-size: min(1.1vw, 1em);
+      width: 100%;
+      max-width: (1322/16)*1em;
+      padding: 0;
+      margin: 0 auto ( 60 / 16) * 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: (30/16)*1em;
+    }
+
+    .cs-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: (30/16)*1em;
+
+      picture {
+        position: relative;
+        display: block;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .cs-row-1 {
+      picture {
+        &:nth-child(1) {
+          width: (420/16)*1em;
+          height: (567/16)*1em;
+        }
+
+        &:nth-child(2) {
+          width: (420/16)*1em;
+          height: (629/16)*1em;
+        }
+
+        &:nth-child(3) {
+          width: (420/16)*1em;
+          height: ( 512 / 16 ) * 1em;
+        }
+      }
+    }
+
+    .cs-row-2 {
+      picture {
+        &:nth-child(1) {
+          width: (420/16)*1em;
+          height: (492/16)*1em;
+        }
+
+        &:nth-child(2) {
+          width: (420/16)*1em;
+          height: (517/16)*1em;
+        }
+
+        &:nth-child(3) {
+          width: (420/16)*1em;
+          height: (629/16)*1em;
+        }
+      }
+    }
+
+    .cs-row-3 {
+      picture {
+        &:nth-child(1) {
+          width: (420/16)*1em;
+          height: (625/16)*1em;
+        }
+
+        &:nth-child(2) {
+          width: (420/16)*1em;
+          height: (452/16)*1em;
+        }
+
+        &:nth-child(3) {
+          width: (420/16)*1em;
+          height: (629/16)*1em;
+        }
+      }
+    }
+  }
+}
+
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: (50 / 16) * 1rem 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .7;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -2;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      font-weight: 900;
+      font-size: min(9vw, 3rem);
+      line-height: calc(58/48);
+      color: #fff;
+      position: relative;
+      margin-bottom: (36/16)*1rem;
+      text-align: center;
+    }
+
+    p {
+      color: #fff;
+      text-align: center;
+      opacity: 1;
+      margin: auto auto (36/16)*1rem;
+      width: 96%;
+      max-width: (598 / 16) * 1rem;
+
+    }
+  }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: (168 / 16) * 1rem 0;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: (100 / 16) * 1rem;
+
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: (1108 / 16) * 1rem;
+      width: (2000 / 16) * 1rem;
+      background: url("/assets/svgs/cta-squares.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -3;
+    }
+
+    .container {
+      width: 90.0625%;
+      margin: auto;
+    }
+
+    picture {
+      width: 90.0625%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: .7;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode {
+    #cta {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

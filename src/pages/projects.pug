@@ -1,0 +1,56 @@
+---
+layout: 'base.pug'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Projects'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/projects.css'
+permalink: 'projects/'
+eleventyNavigation:
+    key: Projects
+    order: 300
+---
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+section#int-hero
+  h1#home-h Our Projects
+  img(src="../../src/images/cabinets2.jpg" alt="cabinets" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")
+// ============================================
+// Gallery
+// ============================================
+section#gallery
+  .cs-container
+    .cs-image-group
+      // Row 1
+      .cs-row.cs-row-1
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port1.jpg' alt='new hallway' sizes="(max-width: 600px) 200px, 400px")
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port4.jpg' alt='new home construction' sizes="(max-width: 600px) 200px, 400px")
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port7.jpg' alt='building a new wall' sizes="(max-width: 600px) 200px, 400px")
+        // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
+      // Row 2
+      .cs-row.cs-row-2
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port2.jpg' alt='new kitchen' sizes="(max-width: 600px) 200px, 400px")
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port5.jpg' alt='appartment addition' sizes="(max-width: 600px) 200px, 400px")
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port8.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
+      // Row 3
+      .cs-row.cs-row-3
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port3.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port6.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        img(loading='lazy' decoding='async' src='../../src/images/portfolio/port9.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
+    a.button-solid(href='/contact') Get Free Quote
+// ============================================
+// Final Call to Action
+// ============================================
+section#cta
+  .container
+    h2.title
+      | Get It Done
+      br
+      |  With Us Today
+    p
+      | Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
+    a.button-solid(href='/contact.html') Free Estimate
+  img(src="../../src/images/cabinets2.jpg" alt="kitchen cabinets" lazy sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")

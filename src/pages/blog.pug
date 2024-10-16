@@ -1,0 +1,56 @@
+---
+layout: 'base.pug'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Blog'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/blog.css'
+permalink: 'blog/'
+eleventyNavigation:
+    key: Blog
+    order: 500
+---
+
+section#int-hero
+  h1#home-h Blog
+  img(src="../../src/images/cabinets2.jpg" alt="cabinets" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")
+
+div.blog-container.main-content-wrapper
+    // Main content
+    div.main-content
+        // Blog Articles
+        if collections.post.length === 0
+            h1 No Recent Posts
+        each post in collections.post
+            article.recent-articles
+                // Main Article Image
+                picture.blog-mainImage
+                    img(
+                        src=post.data.image,
+                        alt=post.data.imageAlt,
+                        width="795",
+                        height="400",
+                        decoding="async"
+                    )
+                // Article Info
+                div.article-group
+                    div.blog-authorGroup
+                        // Author Image
+                        picture.blog-author-img
+                            img(
+                                src="/assets/svgs/profile.svg",
+                                alt="house",
+                                width="32",
+                                height="32",
+                                decoding="async"
+                            )
+                        span.blog-author= post.data.author
+                        span.blog-dot(aria-hidden="true")
+                        // Blog Date
+                        span.blog-date= post.date.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+                    h2.blog-h1= post.data.blogTitle
+                    p.blog-desc= post.data.blogDescription
+                    a.blog-link(href=post.url) Continue Reading
+
+    // Featured Posts
+    include ../_includes/featured-post.pug

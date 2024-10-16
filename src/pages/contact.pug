@@ -1,0 +1,54 @@
+---
+layout: 'base.pug'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Contact'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/contact.css'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact
+    order: 600
+---
+section#int-hero
+  h1#home-h Contact Us
+  img(src='../../src/images/cabinets2.jpg', alt='cabinets', sizes='(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px')
+
+section#cs-contact
+  div.cs-container
+    form#cs-form(name="Contact Form" method="post")
+      div.cs-content
+        span.cs-topper Contact
+        h2.cs-title Get in Touch
+        p.cs-text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+      label
+        | Name
+        input#name(type="text" name="name" required placeholder="Name")
+      label
+        | Email
+        input#email(type="text" name="email" required placeholder="Email")
+      label
+        | Phone
+        input#phone(type="text" name="phone" required placeholder="Phone")
+      label
+        | How Did You Find Us
+        input#find(type="text" name="find-us" placeholder="How did you find us?")
+      label.cs-label-message
+        | Message
+        textarea#message(name="Message" required placeholder="Write message...")
+      button.cs-button-solid(type="submit") Submit Message
+
+    div.cs-right-section
+      // Email
+      span.cs-header Email
+      a.cs-link(href="mailto:support@yourdomain.com") support@yourdomain.com
+      // Phone
+      span.cs-header Phone
+      a.cs-link(href="tel:043412345678") 0434 1234 5678
+      // Address
+      span.cs-header Address
+      a.cs-link(href="") 3043 Melbourne, Australia
+
+      // Background Image
+      img(src='../../src/images/melbourne-building.webp', alt='Melbourne building')

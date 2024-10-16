@@ -1,0 +1,103 @@
+---
+layout: 'base.pug'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Reviews'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/reviews.css'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+// ============================================
+// LANDING
+// ============================================
+section#int-hero
+  h1#home-h Our Reviews
+  img(src="../../src/images/cabinets2.jpg" alt="cabinets" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")
+
+// ============================================
+// Reviews
+// ============================================
+section#reviews
+  .container
+    .review
+      picture
+        img.profile(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/profile.svg' alt='' width='99' height='99')
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+      .star-group
+        span.name
+          | B Miller
+          span.desc Homeowner
+        picture
+          img(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='/assets/svgs/stars.svg' alt='stars' width='91' height='15')
+    .review
+      picture
+        img.profile(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/profile.svg' alt='' width='99' height='99')
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+      .star-group
+        span.name
+          | Vincent M.
+          span.desc Homeowner
+        picture
+          img(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='/assets/svgs/stars.svg' alt='stars' width='91' height='15')
+    .review
+      picture
+        img.profile(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/profile.svg' alt='' width='99' height='99')
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+      .star-group
+        span.name
+          | Alex L.
+          span.desc Homeowner
+        picture
+          img(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='/assets/svgs/stars.svg' alt='stars' width='91' height='15')
+    .review
+      picture
+        img.profile(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/profile-woman.svg' alt='' width='99' height='99')
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+      .star-group
+        span.name
+          | Arrieana M.
+          span.desc Homeowner
+        picture
+          img(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='/assets/svgs/stars.svg' alt='stars' width='91' height='15')
+    .review
+      picture
+        img.profile(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/profile.svg' alt='' width='99' height='99')
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+      .star-group
+        span.name
+          | Leo N.
+          span.desc Homeowner
+        picture
+          img(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='/assets/svgs/stars.svg' alt='stars' width='91' height='15')
+    .review
+      picture
+        img.profile(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/profile.svg' alt='' width='99' height='99')
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+      .star-group
+        span.name
+          | Brian A.
+          span.desc Homeowner
+        picture
+          img(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='/assets/svgs/stars.svg' alt='stars' width='91' height='15')
+// ============================================
+// Final Call to Action
+// ============================================
+section#cta
+  .container
+    h2.title
+      | Get It Done
+      br
+      |  With Us Today
+    p
+      | Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
+    a.button-solid(href='/contact.html') Free Estimate
+  img(src="../../src/images/cabinets2.jpg" alt="cabinets" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")

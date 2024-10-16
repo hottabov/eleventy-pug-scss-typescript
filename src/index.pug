@@ -1,0 +1,202 @@
+---
+layout: 'base.pug'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Home'
+preloadImg: '/images/blog/landing.jpg'
+preloadCSS: '/css/local.css'
+permalink: '/'
+eleventyNavigation:
+    key: 'Home'
+    order: 100
+---
+
+section#hero
+  .cs-container
+    .cs-flex-group
+      span.cs-topper mountain hiking society
+      h1.cs-title Explore the World with Exciting People
+      p.cs-text
+        | Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin
+        | nibh
+        | condimentum.
+      a.cs-button-solid(href='') Explore More
+      a.cs-button-transparent(href='')
+        img.cs-img(eleventy:ignore loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg' alt='play icon' width='17' height='17' )
+        |                 Learn More
+  //   Background Image
+
+  img.cs-picture(loading='lazy' decoding='async' src='images/landing.jpg' alt='mountains' sizes="(max-width: 400px) 400px, (max-width:850px) 850px, 1920px")
+
+
+// ============================================
+// Services
+// ============================================
+section#services.services
+  // Get Icons From flaticon.com
+  .card
+    picture
+      img(eleventy:ignore aria-hidden='true' decoding='async' src='/assets/svgs/service1.svg' alt='appliance' width='48' height='48')
+    h2 Service 1
+    p
+      | Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.
+  .card
+    picture
+      img(eleventy:ignore aria-hidden='true' decoding='async' src='/assets/svgs/service2.svg' alt='appliance' width='48' height='48')
+    h2 Service 2
+    p
+      | Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.
+  .card
+    picture
+      img(eleventy:ignore aria-hidden='true' decoding='async' src='/assets/svgs/service3.svg' alt='appliance' width='48' height='48')
+    h2 Service 3
+    p
+      | Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.
+// ============================================
+// Side By Side
+// ============================================
+section#sbs
+  .cs-container
+    // Left Image Section
+    .cs-left
+      img.cs-picture.cs-picture1(src="../src/images/cabinets2.jpg" alt="houses" lazy sizes="(max-width: 600px) 100vw, 50vw")
+      img.cs-picture.cs-picture2(src="../src/images/construction.jpg" alt="house" lazy sizes="(max-width: 600px) 100vw, 50vw")
+    // Right Content Section
+    .cs-right
+      span.cs-topper About Us
+      h2.cs-title About Company Title
+      p.cs-text In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei  aptent taciti sociosqu ad litora torquent per.
+      p.cs-text In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+      .cs-flex-group
+        p.cs-flex-p
+          | In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit
+          | amet
+          | imperdiet for mind.
+        span.cs-name Justin Time
+        span.cs-job CEO-Founder
+        img.cs-quote-icon(eleventy:ignore loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg' alt='gavel' width='136' height='77' sizes="(width: 136px) 100vw, 50vw")
+      a.button-solid(href='/about') More About Us
+// ============================================
+// Extra Content To Rank
+// ============================================
+section#sbs-r
+  .cs-container
+    // Left Image Section
+    .cs-left
+      img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/construction.jpg' alt='construction' sizes="(max-width: 600px) 100vw, 50vw")
+      img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/cabinets2.jpg' alt='cabinets' sizes="(max-width: 600px) 100vw, 50vw")
+    // Right Content Section
+    .cs-right
+      span.cs-topper SEO Ranking
+      h2.cs-title Talk about a main service keyword
+      p.cs-text In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+      p.cs-text
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque
+        | commodi id
+        | voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores
+        | ullam.
+        | Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem
+        | ipsum
+        | dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error
+        | minus quia
+        | eligendi sapiente eos.
+      a.button-solid(href='') Learn More About Thing
+// ============================================
+// Gallery
+// ============================================
+section#gallery
+  .cs-container
+    span.cs-topper Our Portfolio
+    h2.cs-title Et orci volutpat, back up generator installations
+    .cs-image-group
+      // Row 1
+      .cs-row.cs-row-1
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port1.jpg' alt='new hallway' sizes="(max-width: 600px) 200px, 400px")
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port4.jpg' alt='new home construction' sizes="(max-width: 600px) 200px, 400px")
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port7.jpg' alt='building a new wall' sizes="(max-width: 600px) 200px, 400px")
+        // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
+      // Row 2
+      .cs-row.cs-row-2
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port2.jpg' alt='new kitchen' sizes="(max-width: 600px) 200px, 400px")
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port5.jpg' alt='appartment addition' sizes="(max-width: 600px) 200px, 400px")
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port8.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
+      // Row 3
+      .cs-row.cs-row-3
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port3.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port6.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+        img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port9.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
+
+        // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
+    a.button-solid(href='/projects') View Full Gallery
+// ============================================
+// Reviews
+// ============================================
+section#reviews
+  .cs-container
+    span.cs-topper Our Reviews
+    h2.cs-title Words From Our Customers
+    p.cs-text
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl.
+      | Sagittis
+      | sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem
+      | ipsum
+      | dolor sit amet.
+    ul.cs-card-group
+      // Review 1
+      li.cs-item
+        img.cs-item-img(aria-hidden='true' loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png' alt='profile picture' width='80' height='80' sizes="(width: 80px), (height: 80px)")
+        p.cs-item-p
+          | Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra
+          | magna
+          | pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat
+          | viverra massa
+          | urna, volutpat orci imperdiet eget eget.
+        span.cs-reviewer
+          | Jon Doe
+          span.cs-desc Homeowner
+        img.cs-item-stars(eleventy:ignore aria-hidden='true' loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg' alt='stars' width='96' height='16')
+      // Review 2
+      li.cs-item
+        img.cs-item-img(aria-hidden='true' loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png' alt='profile picture' width='80' height='80' sizes="(width: 80px), (height: 80px)")
+        p.cs-item-p
+          | Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra
+          | magna
+          | pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat
+          | viverra massa
+          | urna, volutpat orci imperdiet eget eget.
+        span.cs-reviewer
+          | Jane Doe
+          span.cs-desc Homeowner
+        img.cs-item-stars(aria-hidden='true' loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg' alt='stars' width='96' height='16' sizes="(width: 96px), (height: 16px)")
+    a.button-solid(aria-label='read more reviews' href='/reviews') Read More
+// ============================================
+// Final Call to Action
+// ============================================
+section#cta
+  .container
+    h2.title
+      | Get It Done
+      br
+      | With Us Today
+    p
+      | Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to
+      | add
+      | these to the bottom of all pages.
+    a.button-solid(href='/contact') Get an Estimate Now
+  img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/cabinets2.jpg' alt='kitchen cabinets' sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")
+script(src='https://identity.netlify.com/v1/netlify-identity-widget.js')
+script.
+  if (window.netlifyIdentity) {
+  window
+  .netlifyIdentity
+  .on('init', (user) => {
+  if (!user) {
+  window
+  .netlifyIdentity
+  .on('login', () => {
+  document.location.href = '/admin/';
+  });
+  }
+  });
+  }

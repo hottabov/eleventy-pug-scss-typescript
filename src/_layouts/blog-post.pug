@@ -1,0 +1,56 @@
+---
+layout: 'base.pug'
+preloadCSS: '/css/blog.css'
+eleventyComputed:
+    description: '{{ blogDescription }}'
+    metaTitle: '{{ blogTitle }}'
+    tagTitle: '{{ titleTag }}'
+    preloadImg: '{{ image }}'
+    permalink: '/blog/{{ pageName | slug }}/index.html'
+---
+
+// ============================================
+//                    LANDING
+// ============================================
+section#int-hero
+  // Image with lazy loading
+  picture
+    source(srcset=preloadImg, media="(max-width: 850px)")
+    img(src=preloadImg, alt=blogTitle, width="1920", height="850", decoding="async")
+
+// ============================================
+//              Main Blog Content
+// ============================================
+div.blog-container.main-content-wrapper
+  // Main content
+  div.main-content
+    // ============================================
+    //                  Blog Article
+    // ============================================
+    article.blog-article
+      // Main Article Image
+      picture.blog-mainImage
+        img(src=image, alt=imageAlt, width="795", height="400", decoding="async")
+
+      // Article Info
+      div.article-group
+        h1.blog-h1= blogTitle
+        div.blog-authorGroup
+          // Author Image
+          picture.blog-author-img
+            img(eleventy:ignore src="/assets/svgs/profile.svg", alt="Author Image", width="32", height="32", decoding="async")
+          span.blog-author= author
+          span.blog-dot(aria-hidden="true")
+          // Blog Date
+          //span.blog-date= date | postDate
+          span.blog-date= date.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+
+      section#blog-content
+        | !{ content }
+
+  // End .main-content
+
+  // ============================================
+  //                   Sidebar
+  // ============================================
+  include ../_includes/featured-post.pug

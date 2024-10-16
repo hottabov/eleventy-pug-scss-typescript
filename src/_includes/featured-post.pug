@@ -1,0 +1,50 @@
+//- // Blog Sidebar
+//- div.blog-sidebar
+//-   // Featured Posts
+//-   div.blog-featured-group
+//-     span.blog-header Featured Posts
+//-     each post in collections.featured | reverse
+//-       a.blog-feature(href=post.url)
+//-         picture.blog-featureImage
+//-           img(src=post.data.image, alt=post.data.imageAlt, width="60", height="60", decoding="async")
+//-         div.content-group
+//-           h3.feature-h3= post.data.blogTitle
+//-           span.feature-date= post.date.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+//-
+//-   // Add anything else in the sidebar below
+
+
+
+//- // Blog Sidebar
+//- div.blog-sidebar
+//-   // Featured Posts
+//-   div.blog-featured-group
+//-     span.blog-header Featured Posts
+//-       ul
+//-         each post in collections.blog
+//-           if post.data.featured === true
+//-             li
+//-               h3
+//-                 a(href=post.url) #{post.data.blogTitle}
+//-
+//-               img(src=post.data.image, alt=post.data.imageAlt ? post.data.imageAlt : 'Blog image', sizes="(max-width: 600px) 600px, 400px")
+//-               p Date: #{post.date.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+//-               p #{post.data.blogDescription}
+//-   // Add anything else in the sidebar below
+
+
+// Blog Sidebar
+.blog-sidebar
+  // Featured Posts
+  .blog-featured-group
+    span.blog-header Featured Posts
+    each post in collections.blog
+      if post.data.featured === true
+        a.blog-feature(href=post.url)
+          .blog-featureImage
+            img(src=post.data.image, alt=post.data.imageAlt, width="60", height="60", decoding="async")
+
+          div.content-group
+            h3.feature-h3= post.data.blogTitle
+            span.feature-date= post.date.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+  // Add anything else in the sidebar below

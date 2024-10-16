@@ -1,0 +1,16 @@
+{
+  "companyName": "Leonov Web Designs Eleventy-Pug-SCSS-Demo Website",
+  "name": "Vadym Leonov",
+  "email": "vadym@leonovdesign.com",
+  "phone": "+61434179988",
+  "phoneFormatted": "0434 179 988",
+  "address": {
+    "lineOne": "863/234 St Kilda Rd",
+    "lineTwo": "Southbank",
+    "city": "Melbourne",
+    "county": "AU",
+    "postcode": "3006",
+    "mapLink": "https://maps.app.goo.gl/DLdUJR1EMWz5K2E1A"
+  },
+  "domain": "leonov.pp.ua"
+}
