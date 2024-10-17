@@ -8,7 +8,7 @@ blogDescription: Learn how to prepare for a flood in Australia with this
   emergency kit, and staying safe during flood events—all while enjoying some
   light-hearted humor and funny facts to keep things upbeat. Perfect for
   homeowners looking to protect their property from flooding.
-author: Joe Mendez
+author: Vadym Leonov
 date: 2024-10-01T06:09:19.307Z
 tags:
   - post
