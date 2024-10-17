@@ -5,7 +5,7 @@ pageName: the-roof-over-our-heads-a-melbourne-story
 blogTitle: "The Roof Over Our Heads: A Melbourne Story"
 blogDescription: Here is another test post to make sure that everything is sound and smooth
 author: Vadym Leonov
-date: 2022-12-16T19:45:03.587Z
+date: 2024-10-17T00:24:39.771Z
 tags:
   - post
 image: https://img.freepik.com/free-photo/long-shot-man-working-roof_23-2148748777.jpg?t=st=1729124579~exp=1729128179~hmac=19bc93ea6a2d9a9485d661bb761773e40664cfe75aa113b17a63478971988c0d&w=2000
