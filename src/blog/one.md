@@ -16,7 +16,7 @@ image: https://img.freepik.com/free-photo/long-shot-man-working-roof_23-21487487
 imageAlt: Roofing in Melbourne
 featured: true
 ---
-## **Table of contents**
+## **Table of Contents**
 
 1. [Introduction](#introduction)
 2. [The Challenges of Roofing in Melbourne](#the-challenges-of-roofing-in-melbourne)
