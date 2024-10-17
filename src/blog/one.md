@@ -8,7 +8,7 @@ author: Vadym Leonov
 date: 2022-12-16T19:45:03.587Z
 tags:
   - post
-image: https://cdn.pixabay.com/photo/2022/04/03/14/22/city-7109073_1280.jpg
+image: https://img.freepik.com/free-photo/long-shot-man-working-roof_23-2148748777.jpg?t=st=1729124579~exp=1729128179~hmac=19bc93ea6a2d9a9485d661bb761773e40664cfe75aa113b17a63478971988c0d&w=2000
 imageAlt: Roofing in Melbourne
 featured: true
 ---
