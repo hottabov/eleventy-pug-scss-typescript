@@ -26,42 +26,42 @@
       width: (631/16)*1em;
       height: (636 / 16) * 1rem;
       position: relative;
-    }
 
-    picture .cs-picture {
-      border-radius: (24 / 16) * 1em;
-      /* clips img tag corners */
-      overflow: hidden;
-      position: absolute;
-      display: block;
-
-      img {
+      picture {
+        border-radius: (24 / 16) * 1em;
+        /* clips img tag corners */
+        overflow: hidden;
         position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        /* makes image act like a background image */
-        object-fit: cover;
+        display: block;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
+        /* 6px - 12px */
+        border: clamp(.375em, 1.5vw, .75em) solid #fff;
+
+        &:nth-child(1) {
+          width: (522/16)*1em;
+          height: (581/16)*1em;
+          left: 0;
+          top: 0;
+        }
+        &:nth-child(2) {
+          width: (414/16)*1em;
+          height: (400/16)*1em;
+
+          right: 0;
+          bottom: 0;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          /* makes image act like a background image */
+          object-fit: cover;
+        }
       }
-    }
-
-    picture .cs-picture1 {
-      width: (522/16)*1em;
-      height: (581/16)*1em;
-      left: 0;
-      top: 0;
-    }
-
-    picture .cs-picture2 {
-      width: (414/16)*1em;
-      height: (400/16)*1em;
-      background-color: #fff;
-      box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
-      /* 6px - 12px */
-      border: clamp(.375em, 1.5vw, .75em) solid #fff;
-      right: 0;
-      bottom: 0;
     }
 
     .cs-right {

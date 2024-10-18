@@ -11,11 +11,9 @@
     // Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version
     a.logo(aria-label='click to go to home page' href='/')
       // Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version
-      img.light(eleventy:ignore aria-hidden='true' src='/assets/images/logo-white.svg' decoding='async' alt='logo' width='221' height='66')
+      img.light(eleventy:ignore aria-hidden='true' src='/assets/svgs/logo-white.svg' decoding='async' alt='logo' width='221' height='66')
       // Dark Colored Logo
-      //img.cs-picture.cs-picture1(loading='lazy' decoding='async' src='../src/images/portfolio/port8.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
-
-      img.dark(eleventy:ignore aria-hidden='true' src='/assets/images/logo-blue.svg' decoding='async' loading='lazy' alt='logo' width='221' height='66')
+      img.dark(eleventy:ignore aria-hidden='true' src='/assets/svgs/logo-colour.svg' decoding='async' loading='lazy' alt='logo' width='221' height='66')
     // Mobile Nav toggle
     button.hamburger-menu(aria-expanded='false' aria-controls='navbar-menu')
       span.visually-hidden Menu

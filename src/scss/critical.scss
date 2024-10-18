@@ -24,7 +24,7 @@
       width: 100%;
       height: 100%;
       background: #000;
-      opacity: .7;
+      opacity: .5;
       position: absolute;
       display: block;
       top: 0;
@@ -86,7 +86,7 @@
       margin: auto;
       width: 80vw;
       /* 464px - 562px */
-      max-width: clamp(29em, 60vw, 35.125em);
+      max-width: clamp(29em, 60vw, 50em);
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -288,7 +288,7 @@
 @media only screen and (min-width: 0em) {
 
   .services {
-    border-radius: (5/16)*1em;
+    border-radius: toEm(5);
     margin: auto;
     margin-top: (-167/16)*1em;
     position: relative;

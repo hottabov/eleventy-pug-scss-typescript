@@ -1,16 +1,16 @@
 {
-  "companyName": "Leonov Web Designs Eleventy-Pug-SCSS-Demo Website",
+  "companyName": "Procare Home Improvements",
   "name": "Vadym Leonov",
-  "email": "vadym@leonovdesign.com",
-  "phone": "+61434179988",
-  "phoneFormatted": "0434 179 988",
+  "email": "procarehomeimprovements1@gmail.com",
+  "phone": "+610431893983",
+  "phoneFormatted": "0431 893 983",
   "address": {
-    "lineOne": "863/234 St Kilda Rd",
-    "lineTwo": "Southbank",
+    "lineOne": "27/101 Collins Street",
+    "lineTwo": "VIC 3000",
     "city": "Melbourne",
-    "county": "AU",
-    "postcode": "3006",
-    "mapLink": "https://maps.app.goo.gl/DLdUJR1EMWz5K2E1A"
+    "county": "Australia",
+    "postcode": "3000",
+    "mapLink": "https://maps.app.goo.gl/1qD7t418XQVhaUyz7"
   },
   "domain": "leonov.pp.ua"
 }

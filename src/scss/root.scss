@@ -9,9 +9,9 @@
 
   // Website colors
   :root {
-    --primary: #FFBA19;
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
+    --primary: #5dc6ff;
+    --primaryShade: #5294da;
+    --primaryDark: #FFBA19;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;
@@ -761,7 +761,7 @@
       margin: 0 auto;
       position: relative;
       width: 96%;
-      max-width: 50 ( 0 / 16) * 1rem;
+      max-width: toRem(500);
       margin-top: ( 70 / 16) * 1rem;
       margin-bottom: ( 30 / 16) * 1rem;
     }
