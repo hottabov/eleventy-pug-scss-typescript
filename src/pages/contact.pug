@@ -16,7 +16,7 @@ section#int-hero
 
 section#cs-contact
   div.cs-container
-    form#cs-form(name="Contact Form" method="post" netlify)
+    form#cs-form(name="Contact Form" method="post" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true")
       div.cs-content
         span.cs-topper Contact
         h2.cs-title Get in Touch
@@ -31,12 +31,15 @@ section#cs-contact
       label
         | Phone
         input#phone(type="text" name="phone" required placeholder="Phone")
+      label.shwehd
+        input(name='bot-field')
       label
         | How Did You Find Us
         input#find(type="text" name="find-us" placeholder="How did you find us?")
       label.cs-label-message
         | Message
         textarea#message(name="Message" required placeholder="Write message...")
+      div(data-netlify-recaptcha="true")
       button.cs-button-solid(type="submit") Submit Message
 
     div.cs-right-section
