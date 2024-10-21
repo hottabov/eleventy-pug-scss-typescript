@@ -27,6 +27,7 @@
       padding: 0;
       margin: 0 auto ( 60 / 16) * 1rem;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       gap: (30/16)*1em;
@@ -38,6 +39,113 @@
       justify-content: flex-start;
       align-items: center;
       gap: (30/16)*1em;
+      width: 100%;
+
+      picture {
+        position: relative;
+        display: block;
+
+        img {
+
+          height: auto;
+          width: 100%;
+
+        }
+      }
+    }
+
+    picture {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+}
+
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: (50 / 16) * 1rem 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .7;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -2;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      font-weight: 900;
+      font-size: min(9vw, 3rem);
+      line-height: calc(58 / 48);
+      color: #fff;
+      position: relative;
+      margin-bottom: (36/16)*1rem;
+      text-align: center;
+    }
+
+    p {
+      color: #fff;
+      text-align: center;
+      opacity: 1;
+      margin: auto auto (36/16)*1rem;
+      width: 96%;
+      max-width: (598 / 16) * 1rem;
+
+    }
+  }
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: (168 / 16) * 1rem 0;
+  }
+  #gallery {
+    .cs-image-group {
+      flex-direction: row;
+    }
+    .cs-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: (30/16)*1em;
+      width: auto;
 
       picture {
         position: relative;
@@ -110,80 +218,6 @@
         }
       }
     }
-  }
-}
-
-/*-- -------------------------- -->
-<---    Final Call To Action    -->
-<--- -------------------------- -*/
-
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  #cta {
-    position: relative;
-    padding: (50 / 16) * 1rem 0;
-
-    &:before {
-      content: '';
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      opacity: .7;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    picture {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -2;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .title {
-      font-weight: 900;
-      font-size: min(9vw, 3rem);
-      line-height: calc(58/48);
-      color: #fff;
-      position: relative;
-      margin-bottom: (36/16)*1rem;
-      text-align: center;
-    }
-
-    p {
-      color: #fff;
-      text-align: center;
-      opacity: 1;
-      margin: auto auto (36/16)*1rem;
-      width: 96%;
-      max-width: (598 / 16) * 1rem;
-
-    }
-  }
-}
-
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #cta {
-    padding: (168 / 16) * 1rem 0;
   }
 }
 

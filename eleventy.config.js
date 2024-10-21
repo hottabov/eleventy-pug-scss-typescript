@@ -1,16 +1,14 @@
 import pugPlugin from "@11ty/eleventy-plugin-pug";
 import eleventyNavigation from "@11ty/eleventy-navigation";
-import { DateTime } from "luxon";
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import {DateTime} from "luxon";
+import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 import path from 'path';
 import htmlMinifier from 'html-minifier';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
 
 
-
-export default function(eleventyConfig) {
-
+export default function (eleventyConfig) {
 
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // which file extensions to process
@@ -32,13 +30,14 @@ export default function(eleventyConfig) {
         // optional, attributes assigned on <img> override these values.
         defaultAttributes: {
             loading: 'lazy',
-            sizes: '(max-width: 600px) 400px, 850px, 100vw',
+            sizes: '(max-width: 600px) 400px, 850px, 100vw', //default values
             decoding: 'async',
         },
     });
 
     eleventyConfig.addPlugin(pugPlugin, {
-        globals: ['filters'],
+        globals: 'filters',
+        async: true,
         debug: true
     });
 
@@ -48,7 +47,7 @@ export default function(eleventyConfig) {
 
     // Мінімізуємо HTML тільки в продакшені
     if (isProd) {
-        eleventyConfig.addTransform('htmlmin', function(content, outputPath) {
+        eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
             if (outputPath && outputPath.endsWith('.html')) {
                 return htmlMinifier.minify(content, {
                     useShortDoctype: true,
@@ -60,10 +59,10 @@ export default function(eleventyConfig) {
         });
     }
 
-    // Мініфікуємо CSS тільки в продакшені
-    eleventyConfig.addTransform('postcss', async function(content, outputPath) {
+    // Minify CSS only in production
+    eleventyConfig.addTransform('postcss', async function (content, outputPath) {
         if (isProd && outputPath && outputPath.endsWith('.css')) {
-            let output = await postcss([cssnano]).process(content, { from: outputPath });
+            let output = await postcss([cssnano]).process(content, {from: outputPath});
             return output.css;
         }
         return content;
@@ -75,7 +74,7 @@ export default function(eleventyConfig) {
         });
     });
 
-    eleventyConfig.addCollection("blog", function(collection) {
+    eleventyConfig.addCollection("blog", function (collection) {
         return collection.getFilteredByGlob("./src/blog/*.md").sort((a, b) => {
             return b.date - a.date;
         });

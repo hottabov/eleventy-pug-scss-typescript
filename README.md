@@ -16,27 +16,38 @@
 
 In my daily work, I rely heavily on **Pug** for its significant acceleration in writing HTML, utilizing loops, templates, and making everything visually clearer. After spending a considerable amount of time integrating Pug into **Eleventy 3**, I finally breathed a sigh of relief. Moreover, I cannot imagine writing **CSS** without **SCSS**. By combining **Pug** and **SCSS**, you can boost your development speed significantly!
 
-Having tried many static site generators—from **Gulp** to **Webpack**, and finally **Parcel**—I settled on **Eleventy**. While Eleventy also requires some customization, it runs much faster and, most importantly, has a blog system that transforms static websites into a mini CMS.
+Having tried many static site generators—from **Gulp** to **Webpack**, and finally **Parcel**—I settled on **Eleventy**. While Eleventy also requires some customization, it runs much faster and, most importantly, has a blog system that transforms static websites into a mini CMS for the client.
 
-The design of this website is based on [this repository](https://github.com/Oak-Harbor-Kits/Starter-Kit-V4-Eleventy). I appreciate the great work and detailed guide by the author. This kit includes the same file structure but has been enhanced and refined. It will continue to be updated as it has become my primary development tool.
+This kit based on [this repository](https://github.com/Oak-Harbor-Kits/Starter-Kit-V4-Eleventy). I appreciate the great work and detailed guide by the author. This kit includes the same file structure but has been enhanced, updated up to Eleventy 3 and refined. It will continue to be updated as it has become my primary development tool.
+
+**Live demo** is here: [leonov.pp.ua](https://leonov.pp.ua)
 
 ## Features
-- **Eleventy 3** static site generator.
+
+This starter kit is like a cheat code for getting your project live in no time. It’s basically a ready-made website you can tweak to perfection, giving you a fully responsive, mostly optimized site in just a few hours. Plus, it comes with some fun extras to make your dev life easier.
+
+- **Eleventy 3** static site generator. Supercharge your HTML with reusable components and layouts. Pug is the template language here, but you can mix and match others too.
 - **Pug** templating engine for faster HTML development.
 - **SCSS** for modular, maintainable, and efficient CSS styling.
 - **TypeScript** for strongly typed JavaScript development.
 - **PostCSS** with **cssnano** for CSS minification.
 - **Terser** for JavaScript minification.
-- **Eleventy Image Plugin** for responsive image generation and optimization.
+- **Eleventy Image Plugin** for responsive image generation and optimization. Stop wasting time optimizing images. This plugin compresses and converts them for you, shooting your Lighthouse score over 90.
+- **Eleventy Navigation**: Get navigation done in 3 lines of code—boom, it’s ready.
 - **Luxon** for handling dates and times in templates.
 - Integrated **BrowserSync** for live reloading during development.
-- Blog functionality with featured posts support.
+- **Centralized Data**: Change client info in _data/client.json like phone numbers or addresses in one place, and it’s updated everywhere (almost everywhere, but double check it, ok?).
+- **Netlify CMS**: Improved Blog functionality with featured posts support. Pre-configured and ready to go.
+- **Dark Mode**: Easy dark mode, auto-activated based on users’ system preferences. Nice touch, right?
+
+Get ready to launch without breaking a sweat!
 
 ## Technologies
 - **Eleventy (11ty)**: Static site generator.
 - **Pug**: Templating engine that simplifies HTML.
 - **SCSS**: CSS preprocessor for writing cleaner and more maintainable CSS.
 - **TypeScript**: Type-safe JavaScript.
+- **CSS-mqpacker**: collects CSS from media queries, significantly reducing the code.
 - **PostCSS & cssnano**: CSS post-processing and minification.
 - **Terser**: JavaScript minifier.
 - **Luxon**: Date and time formatting.
@@ -54,34 +65,30 @@ The design of this website is based on [this repository](https://github.com/Oak-
 │   ├── ts             # TypeScript files
 │   ├── pages          # Page templates in Pug
 │   └── robots.txt     # Robots file
-├── public             # Generated output
-│   ├── css            # Compiled CSS
-│   ├── js             # Compiled and minified JS
-│   ├── images         # Processed images
 ├── eleventy.config.js # Eleventy configuration file
 ├── package.json       # npm scripts and dependencies
+├── postcss.config.js  # Postcss configuration file
 ├── tsconfig.json      # TypeScript configuration
 └── README.md          # Project documentation
 ```
 ## How it Works
 
 **Eleventy** compiles Pug templates and Markdown files into static HTML files.
-**SCSS** is compiled into CSS and minified using PostCSS with cssnano.
+**SCSS** is compiled into CSS, optimized with mqpacker, and minified using PostCSS with cssnano. 
 **TypeScript** is compiled into JavaScript and minified with Terser.
-**Eleventy** Image Plugin processes images into responsive formats and serves them efficiently. Unfortunately, I have not been able to make the class provided by <img> reassigned to <picture>. After reading the developers forum, I found out that this feature is still in development.
+**Eleventy** Image Plugin processes images into responsive formats and serves them efficiently. 
 **BrowserSync** enables live reloading when files change during development.
 
 ## Installation
 
 ### 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone git@github.com:hottabov/eleventy-pug-scss-typescript.git
+cd eleventy-pug-scss-typescript
 ```
 ### 2. Install dependencies:
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+npm install
 ```
 
 ### 3. Set up the project structure:
@@ -91,7 +98,7 @@ Make sure your folder structure follows the file structure described above.
 
 ### Development
 
-1.	Start the development server:
+1. Start the development server:
 ```bash
 npm start
 ```
@@ -131,6 +138,10 @@ This will:
 - **BrowserSync** ensures live-reloading of the development server.
 - **Luxon** handles date formatting within templates.
 - The **Eleventy Image Plugin** is configured to optimize images and serve responsive versions.
+
+**Known issues**
+
+I have not been able to make the class provided by the *img* tag reassigned to the *picture* tag using the Eleventy Image Plugin. After reading the developers’ forum, I found that this feature is still in development. But you are a CSS ninja, right? So, that's not a big deal.
 
 ## Plans
 
