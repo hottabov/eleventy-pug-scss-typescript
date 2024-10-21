@@ -485,7 +485,7 @@
       }
     }
 
-    .scroll {
+    &.scroll {
       #navbar-menu {
         ul {
           li {
@@ -713,6 +713,17 @@
 
               &.active {
                 color: var(--primary);
+              }
+            }
+          }
+        }
+      }
+      &.scroll {
+        #navbar-menu {
+          ul {
+            li {
+              a {
+                color: #fff;
               }
             }
           }
