@@ -8,6 +8,7 @@ footer#footer
       a.logo(href='/')
         img(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/logo-white.svg' alt='logo' width='264' height='78')
       p Your Dream Home Starts Here – Let’s Build It Together!
+      p Company number: 668 518 894
     .right-section
       .lists
         //to-do Make it dynamic
@@ -29,7 +30,7 @@ footer#footer
           li
             h2 Contact
           li
-            a(href='/contact')
+            a(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank")
               | #{client.address.lineOne}
               br
               | #{client.address.city}
@@ -49,8 +50,13 @@ footer#footer
         script.
           document.write(new Date().getFullYear());
         |.
-    span Designed and Hand Coded by
         |
         |
-        a(href='https://leonovdesign.com' target='_blank') LeonovDesign.com
-        |.
+    span
+      |
+      |
+      | Designed and Hand Coded by
+      |
+      |
+      a(href='https://leonovdesign.com' target='_blank') LeonovDesign
+      |.

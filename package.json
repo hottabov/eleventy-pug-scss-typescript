@@ -25,6 +25,7 @@
     "@11ty/eleventy-img": "^5.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-pug": "^1.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@types/node": "^22.7.5",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^7.0.6",

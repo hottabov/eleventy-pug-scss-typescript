@@ -16,7 +16,7 @@ section#int-hero
 
 section#cs-contact
   div.cs-container
-    form#cs-form(name="Contact Form" method="post")
+    form#cs-form(name="Contact Form" method="post" netlify)
       div.cs-content
         span.cs-topper Contact
         h2.cs-title Get in Touch
@@ -42,13 +42,13 @@ section#cs-contact
     div.cs-right-section
       // Email
       span.cs-header Email
-      a.cs-link(href="mailto:support@yourdomain.com") support@yourdomain.com
+      a.cs-link(href="mailto:procarehomeimprovements1@gmail.com") #{client.email}
       // Phone
       span.cs-header Phone
-      a.cs-link(href="tel:043412345678") 0434 1234 5678
+      a.cs-link(href="tel:+610431893983") #{client.phoneFormatted}
       // Address
       span.cs-header Address
-      a.cs-link(href="") 3043 Melbourne, Australia
+      a.cs-link(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank") #{client.address.lineOne}, #{client.address.city}
 
       // Background Image
       img(src='../../src/images/melbourne-building.webp', alt='Melbourne building')

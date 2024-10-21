@@ -6,6 +6,7 @@ import path from 'path';
 import htmlMinifier from 'html-minifier';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
+import sitemap from "@quasibit/eleventy-plugin-sitemap";
 
 
 export default function (eleventyConfig) {
@@ -106,7 +107,16 @@ export default function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
 
-    eleventyConfig.setTemplateFormats(["md", "pug"]);
+    eleventyConfig.setTemplateFormats(["md", "pug", "njk"]);
+
+    eleventyConfig.addPlugin(sitemap, {
+        lastModifiedProperty: "modified",
+        sitemap: {
+            hostname: "https://leonov.pp.ua", // replace with your website URL
+            changefreq: "weekly",
+            priority: 0.8,
+        }
+    });
 
     return {
         dir: {
