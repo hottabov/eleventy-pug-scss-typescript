@@ -2,6 +2,8 @@
 <---          Contact           -->
 <--- -------------------------- -*/
 
+@import "functions";
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   :root {
@@ -22,7 +24,7 @@
     .cs-container {
       width: 100%;
       /* changes to 1280px at desktop */
-      max-width: ( 800 / 16) * 1rem;
+      max-width: toRem(800);
       margin: auto;
     }
 
@@ -48,7 +50,7 @@
       font-weight: 900;
       line-height: 1.2em;
       text-align: left;
-      max-width: ( 800 / 16) * 1rem;
+      max-width: toRem(800);
       margin: 0 auto 1rem 0;
       color: var(--headerColor);
       position: relative;
@@ -61,14 +63,13 @@
       width: 100%;
       /* 404px - 522px */
       max-width: clamp(25.25rem, 30vw, 32.625rem);
-      margin: 0 auto 0 0;
+      margin: 0 auto clamp(2.5rem, 6.3vw, 3rem) 0;
       /* 40px - 48px */
-      margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
       color: var(--bodyTextColor);
     }
 
     #cs-form {
-      margin-bottom: ( 40 / 16) * 1rem;
+      margin-bottom: toRem(40);
 
       label {
         font-size: 1rem;
@@ -91,11 +92,11 @@
       input, textarea {
         font-size: 1rem;
         width: 100%;
-        height: ( 64 / 16) * 1rem;
-        margin-top: ( 4 / 16) * 1rem;
-        padding-left: ( 20 / 16) * 1rem;
+        height: toRem(64);
+        margin-top: toRem(4);
+        padding-left: toRem(20);
         border: 1px solid #B4B2C7;
-        border-radius: ( 8 / 16) * 1rem;
+        border-radius: toRem(8);
         /* prevents border & padding from affecting height */
         box-sizing: border-box;
         transition: border .3s;
@@ -107,28 +108,29 @@
 
       textarea {
         font-family: inherit;
-        padding-top: ( 20 / 16) * 1rem;
-        min-height: ( 120 / 16) * 1rem;
+        padding-top: toRem(20);
+        min-height: toRem(120);
       }
 
       .cs-button-solid {
         width: 100%;
+        margin-top: toRem(30);
       }
     }
 
     .cs-button-solid {
       font-size: 1rem;
-      line-height: (56/16)*1rem;
+      line-height: toRem(56);
       text-decoration: none;
       font-weight: 700;
       text-align: center;
       margin: auto;
       color: #1a1a1a;
-      min-width: ( 150 / 16) * 1rem;
-      padding: 0 ( 24 / 16) * 1rem;
+      min-width: toRem(150);
+      padding: 0 toRem(24);
       background-color: var(--primary);
       border: none;
-      border-radius: ( 4 / 16) * 1rem;
+      border-radius: toRem(4);
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -145,7 +147,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: ( 4 / 16) * 1rem;
+        border-radius: toRem(4);
         transition: width .3s;
       }
 
@@ -161,17 +163,13 @@
 
     .cs-right-section {
       position: relative;
-      height: ( 280 / 16) * 1rem;
+      height: toRem(280);
       /* 24px - 40px top & bottom */
       /* 20px - 40px left & right */
       padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
-      border-radius: ( 8 / 16) * 1rem;
+      border-radius: toRem(8);
       /* cuts off corners on img tag */
       overflow: hidden;
-      //display: flex;
-      //flex-direction: column;
-      //align-items: flex-start;
-      //justify-content: flex-end;
 
       picture {
         width: 100%;
@@ -213,7 +211,7 @@
       font-size: clamp(1rem, 3vw, 1.25rem);
       line-height: 1.2em;
       font-weight: 700;
-      margin-bottom: ( 8 / 16) * 1rem;
+      margin-bottom: toRem(8);
       color: var(--bodyTextColorWhite);
       display: block;
     }
@@ -223,7 +221,7 @@
       font-size: clamp(1rem, 3vw, 1.25rem);
       line-height: 1.2em;
       text-decoration: none;
-      margin-bottom: ( 20 / 16) * 1rem;
+      margin-bottom: toRem(20);
       color: var(--bodyTextColorWhite);
       display: inline-block;
       position: relative;
@@ -238,7 +236,7 @@
         opacity: 1;
         position: absolute;
         display: block;
-        bottom: - ( 2 / 16 ) * 1rem;
+        bottom: - toRem(2);
         left: 0;
         transition: width .3s;
       }
@@ -285,15 +283,15 @@
 @media only screen and (min-width: 64em) {
   #cs-contact {
     .cs-container {
-      max-width: ( 1280 / 16) * 1rem;
+      max-width: toRem(1280);
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
-      gap: ( 80 / 16) * 1rem;
+      gap: toRem(80);
     }
 
     #cs-form {
-      max-width: ( 630 / 16) * 1rem;
+      max-width: toRem(630);
 
       label {
         width: 100%;
@@ -302,9 +300,9 @@
 
     .cs-right-section {
       /* changes to 578px at 1300px wide */
-      height: (686/16)*1rem;
+      height: toRem(686);
       width: 40%;
-      max-width: ( 542 / 16 ) * 1rem;
+      max-width: toRem(542);
       /* prevents flexbox from squishing it */
       flex: none;
 
@@ -326,11 +324,11 @@
 @media only screen and (min-width: 81.25em) {
   #cs-contact {
     #cs-form {
-      column-gap: ( 0 / 16) * 1rem;
+      column-gap: 0;
 
       label {
         width: 48%;
-        max-width: (305/16)*1rem;
+        max-width: toRem(305);
       }
 
       .cs-label-message {
@@ -339,7 +337,7 @@
     }
 
     .cs-right-section {
-      height: ( 700 / 16) * 1rem;
+      height: toRem(700);
     }
   }
 }
