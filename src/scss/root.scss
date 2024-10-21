@@ -841,7 +841,7 @@
 @media only screen and (min-width: 0em) {
 
   #footer {
-    background: #070707;
+    background: #151515;
     padding: toRem(84) 0 toRem(20);
     font-size: min(4vw, 1.2em);
 
@@ -973,8 +973,8 @@
       font-size: 1rem;
 
       a {
-        color: var(--primary);
-        text-decoration: none;
+        color: #fff;
+        text-decoration: underline;
         font-size: 1rem;
 
         &:hover {
@@ -1088,7 +1088,7 @@
 @media only screen and (min-width: 0em) {
   body.dark-mode {
     #footer {
-      background: #061623;
+      background: #04111c;
     }
   }
 }

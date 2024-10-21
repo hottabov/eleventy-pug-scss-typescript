@@ -16,8 +16,8 @@ html(lang="en")
     meta(property="og:description" content=description)
     meta(property="og:type" content="website")
     meta(property="og:url" content=`https://${client.domain}${page.url}`)
-    meta(property="og:image" content="/images/social.jpg")
-    meta(property="og:image:secure_url" content="/images/social.jpg")
+    meta(property="og:image" content="/assets/images/social.jpg")
+    meta(property="og:image:secure_url" content="/assets/images/social.jpg")
 
     //- Favicons
     link(rel='icon' type='image/png' href='/assets/favicons/favicon-48x48.png' sizes='48x48')
@@ -36,7 +36,7 @@ html(lang="en")
     link(rel="stylesheet" href="/css/root.css")
     link(rel="stylesheet" href="/css/dark.css")
 
-    link(rel="preload" as="image" href=preloadImg)
+    //link(rel="preload" as="image" href=preloadImg)
 
     //- Loading in page specific CSS sheets from css block
     link(rel="stylesheet" href="/css/critical.css")
