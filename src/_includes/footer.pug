@@ -5,7 +5,7 @@
 footer#footer
   .container
     .left-section
-      a.logo(href='/')
+      a.logo(href='/' aria-label="Procare Home in Melbourne")
         img(eleventy:ignore loading='lazy' decoding='async' src='/assets/svgs/logo-white.svg' alt='logo' width='264' height='78')
       p Your Dream Home Starts Here – Let’s Build It Together!
       p Company number: 668 518 894
@@ -30,20 +30,20 @@ footer#footer
           li
             h2 Contact
           li
-            a(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank")
+            a(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank" aria-label="click to open Google maps")
               | #{client.address.lineOne}
               br
               | #{client.address.city}
           li
-            a(href='tel:+610431893983') T: #{client.phoneFormatted}
+            a(href='tel:+610431893983' aria-label="call us 0431893983") T: #{client.phoneFormatted}
           li
-            a(href='mailto:procarehomeimprovements1@gmail.com') Click to Email
+            a(href='mailto:procarehomeimprovements1@gmail.com' aria-label="Click to email us") Click to Email
   .credit
     span.copyright
       | ©
       |
       |
-      a(href='/') #{client.companyName}
+      a(href='/' aria-label="Procare Home in Melbourne") #{client.companyName}
       |,
       | 2023—
       span
@@ -58,5 +58,5 @@ footer#footer
       | Designed and Hand Coded by
       |
       |
-      a(href='https://leonovdesign.com' target='_blank') LeonovDesign
+      a(href='https://leonovdesign.com' target='_blank' aria-label="LeonovDesign") LeonovDesign
       |.

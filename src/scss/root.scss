@@ -582,7 +582,7 @@
               left: 0;
 
               // transition properties
-              width: 0%;
+              width: 0;
               transition: width .3s;
             }
 
@@ -841,7 +841,7 @@
 @media only screen and (min-width: 0em) {
 
   #footer {
-    background: #1C1C1C;
+    background: #070707;
     padding: toRem(84) 0 toRem(20);
     font-size: min(4vw, 1.2em);
 
@@ -1032,7 +1032,6 @@
 
       .lists {
         width: 96%;
-        max-width: toRem(769);
         margin: 0;
         max-width: initial;
 

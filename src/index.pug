@@ -3,7 +3,7 @@ layout: 'base.pug'
 description: 'Roof Repairs & Home Improvement in Melbourne | ProCare'
 metaTitle: 'Roofing, building, painting and carpentry in Melbourne. Get emergency help right now! Free estimate, call now: 0431 893 983'
 tagTitle: 'Home'
-preloadImg: '/images/blog/landing.jpg'
+preloadImg: '/assets/images/blog/landing.jpg'
 preloadCSS: '/css/local.css'
 permalink: '/'
 eleventyNavigation:
@@ -14,13 +14,13 @@ eleventyNavigation:
 section#hero
   .cs-container
     .cs-flex-group
-      span.cs-topper Procare Home Improvements
+      span.cs-topper Procare - Your Home Improvements in Melbourne
       h1.cs-title Your Local Roofing & Home Improvement Specialists
       p.cs-text We help home owners in Melbourne and its suburbs breathe new life into their homes. Whether it's through a simple renovation or full-blown restoration, we can do the job!
-      a.cs-button-solid(href='tel:+610431893983') Call Now!
-      a.cs-button-transparent(href='/projects')
+      a.cs-button-solid(href='tel:+610431893983' aria-label="Call now") Call Now!
+      a.cs-button-transparent(href='/projects' aria-label="See our projects")
         img.cs-img(eleventy:ignore loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg' alt='play icon' width='17' height='17' )
-        | Learn More
+        | See our projects
   //   Background Image
 
   img.cs-picture.cool-guy(loading='lazy' decoding='async' src='images/roofing-and-home-improving-hero.jpg' alt='roofing and home improving in Melbourne' sizes="(max-width: 400px) 400px, (max-width:850px) 850px, 1920px")
@@ -66,7 +66,7 @@ section#sbs
         span.cs-name Michael
         span.cs-job CEO-Founder
         img.cs-quote-icon(eleventy:ignore loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg' alt='gavel' width='136' height='77' sizes="(width: 136px) 100vw, 50vw")
-      a.button-solid(href='/about') More About Us
+      a.button-solid(href='/about' aria-label="More About Us") More About Us
 // ============================================
 // Extra Content To Rank
 // ============================================
@@ -82,7 +82,7 @@ section#sbs-r
       h2.cs-title Say Goodbye to Your Roofing Leaks
       p.cs-text You may probably be tired of dealing with constant roof leaks, cracked tiles, or poor roof drainage. Many of our customers come to us facing similar issues, with leaks damaging their homes and old roofs failing to keep out the weather. We’ve solved these problems by providing expert leak repairs, installing durable new tin roofs, and ensuring gutters are properly cleaned and maintained. Our clients are thrilled with the results, enjoying dry, secure homes that are protected from Melbourne’s unpredictable weather.
       p.cs-text When you trust us with your roofing needs, you’ll experience the same relief and satisfaction. The leaks will stop, the repairs will last, and you’ll finally have peace of mind. At Procare Home, we combine skilled workmanship with top-quality materials to ensure your roof is built to last.
-      a.button-solid(href='/contact') Request a free quote
+      a.button-solid(href='/contact' aria-label="Request a free quote") Request a free quote
 // ============================================
 // Gallery
 // ============================================
@@ -110,7 +110,7 @@ section#gallery
         img(loading='lazy' decoding='async' src='../src/images/portfolio/port9.jpg' alt='new kitchen cabinets' sizes="(max-width: 600px) 200px, 400px")
 
         // To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
-    a.button-solid(href='/projects') View Full Gallery
+    a.button-solid(href='/projects' aria-label="View Full Gallery") View Full Gallery
 // ============================================
 // Reviews
 // ============================================
@@ -136,7 +136,7 @@ section#reviews
           | Emma S.
           span.cs-desc Homeowner
         img.cs-item-stars(aria-hidden='true' loading='lazy' decoding='async' src='https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg' alt='stars' width='96' height='16' sizes="(width: 96px), (height: 16px)")
-    a.button-solid(aria-label='read more reviews' href='/reviews') Read More
+    a.button-solid(aria-label='Read More Reviews Here' href='/reviews') Read More Reviews Here
 // ============================================
 // Final Call to Action
 // ============================================
@@ -147,7 +147,7 @@ section#cta
       br
       | With Us Today
     p Ready to transform your home? Let’s get started today with expert services and guaranteed results. Click below to request your free quote and see how we can help!
-    a.button-solid(href='/contact') Get an Estimate Now
+    a.button-solid(href='/contact' aria-label="Get an Estimate Now") Get an Estimate Now
   img(loading='lazy' decoding='async' src='../src/images/wall-painting.jpg' alt='wall painting' sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px")
 script(src='https://identity.netlify.com/v1/netlify-identity-widget.js')
 script.
