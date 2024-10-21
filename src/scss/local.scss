@@ -1,6 +1,7 @@
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
+@import 'functions';
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -24,7 +25,7 @@
       font-size: min(2.31vw, .7em);
       /* using ems so we can use font size to scale the whole section */
       width: (631/16)*1em;
-      height: (636 / 16) * 1rem;
+      height: toRem(520);
       position: relative;
 
       picture {
@@ -243,7 +244,7 @@
       font-size: min(2.31vw, .7em);
       /* using ems so we can use font size to scale the whole section */
       width: (631/16)*1em;
-      height: ( 636 / 16) * 1rem;
+      height: toRem(540);
       position: relative;
 
       picture {
