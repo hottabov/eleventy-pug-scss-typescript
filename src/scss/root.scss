@@ -490,7 +490,7 @@
         ul {
           li {
             a {
-              color: #fff;
+              color: #fff !important;
             }
           }
         }
@@ -718,6 +718,7 @@
           }
         }
       }
+
       &.scroll {
         #navbar-menu {
           ul {
