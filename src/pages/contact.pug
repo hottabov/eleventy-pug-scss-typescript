@@ -45,13 +45,19 @@ section#cs-contact
     div.cs-right-section
       // Email
       span.cs-header Email
-      a.cs-link(href="mailto:procarehomeimprovements1@gmail.com") #{client.email}
+      .cs-contact-block
+        img(eleventy:ignore src="/assets/svgs/mail-icon.svg" alt="mail")
+        a.cs-link(href="mailto:procarehomeimprovements1@gmail.com") #{client.email}
       // Phone
       span.cs-header Phone
-      a.cs-link(href="tel:+610431893983") #{client.phoneFormatted}
+      .cs-contact-block
+        img(eleventy:ignore src="/assets/svgs/phone-icon.svg" alt="phone")
+        a.cs-link(href="tel:+610431893983") #{client.phoneFormatted}
       // Address
       span.cs-header Address
-      a.cs-link(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank") #{client.address.lineOne}, #{client.address.city}
+      .cs-contact-block
+        img(eleventy:ignore src="/assets/svgs/map-icon.svg" alt="map")
+        a.cs-link(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank") #{client.address.lineOne}, #{client.address.city}
 
       // Background Image
-      img(src='../../src/images/melbourne-building.webp', alt='Melbourne building')
+      img(src='../../src/images/contact-img.jpg', alt='Contact information')

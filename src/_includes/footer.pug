@@ -29,13 +29,16 @@ footer#footer
           li
             h2 Contact
           li
+            img(eleventy:ignore src="/assets/svgs/map-icon.svg" alt="map")
             a(href='https://maps.app.goo.gl/oEfCa4JAStPH4D8Y9' rel="nofollow" target="_blank" aria-label="click to open Google maps")
               | #{client.address.lineOne}
               br
               | #{client.address.city}
           li
-            a(href='tel:+610431893983' aria-label="call us 0431893983") T: #{client.phoneFormatted}
+            img(eleventy:ignore src="/assets/svgs/phone-icon.svg" alt="phone")
+            a(href='tel:+610431893983' aria-label="call us 0431893983") #{client.phoneFormatted}
           li
+            img(eleventy:ignore src="/assets/svgs/mail-icon.svg" alt="mail")
             a(href='mailto:procarehomeimprovements1@gmail.com' aria-label="Click to email us") Click to Email
   .credit
     span.copyright

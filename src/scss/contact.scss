@@ -68,6 +68,21 @@
       color: var(--bodyTextColor);
     }
 
+    .cs-contact-block {
+      display: flex;
+      gap: toRem(12);
+      margin-bottom: 24px;
+      img {
+        display: block;
+        width: toRem(30);
+        height: toRem(30);
+      }
+      a {
+        display: block;
+        padding-top: toRem(6);
+      }
+    }
+
     #cs-form {
       margin-bottom: toRem(40);
 
@@ -188,7 +203,7 @@
           display: block;
           height: 100%;
           width: 100%;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
           top: 0;
           left: 0;
           z-index: 1;

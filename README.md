@@ -20,11 +20,11 @@ Having tried many static site generators—from **Gulp** to **Webpack**, and fin
 
 This kit based on [this repository](https://github.com/Oak-Harbor-Kits/Starter-Kit-V4-Eleventy). I appreciate the great work and detailed guide by the author. This kit includes the same file structure but has been enhanced, updated up to Eleventy 3 and refined. It will continue to be updated as it has become my primary development tool.
 
-**Live demo** is here: [leonov.pp.ua](https://leonov.pp.ua)
+**Live website** is here: [procarehomeinmelbourne.com](https://procarehomeinmelbourne.com)
 
 ## Features
 
-This starter kit is like a cheat code for getting your project live in no time. It’s basically a ready-made website you can tweak to perfection, giving you a fully responsive, mostly optimized site in just a few hours. Plus, it comes with some fun extras to make your dev life easier.
+This starter kit is like a cheat code for getting your project live in no time. It’s basically a ready-made website you can tweak to perfection, giving you a fully responsive, optimized website in just a few hours. Plus, it comes with some fun extras to make your dev life easier.
 
 - **Eleventy 3** static site generator. Supercharge your HTML with reusable components and layouts. Pug is the template language here, but you can mix and match others too.
 - **Pug** templating engine for faster HTML development.
@@ -76,7 +76,7 @@ Get ready to launch without breaking a sweat!
 **Eleventy** compiles Pug templates and Markdown files into static HTML files.
 **SCSS** is compiled into CSS, optimized with mqpacker, and minified using PostCSS with cssnano. 
 **TypeScript** is compiled into JavaScript and minified with Terser.
-**Eleventy** Image Plugin processes images into responsive formats and serves them efficiently. 
+**Eleventy Image** Plugin processes images into responsive formats and serves them efficiently. 
 **BrowserSync** enables live reloading when files change during development.
 
 ## Installation
@@ -149,4 +149,4 @@ I am planning to add mixins for SCSS and PUG to the build to shorten the code an
 
 ## License
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute this software as needed. 
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software as needed.
