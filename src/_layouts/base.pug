@@ -55,7 +55,7 @@ html(lang="en")
     //- For home page, use full title, including location for SEO. Other pages should just include the page name
     title
       if page.url == "/"
-        | #{client.companyName} | #{tagTitle} | #{client.address.city}, #{client.address.county}
+        | Roof Leak Repair, Carpentry, Painting | #{client.companyName} | #{client.address.city}, #{client.address.county}
       else
         | #{tagTitle} | #{client.companyName}
   body
