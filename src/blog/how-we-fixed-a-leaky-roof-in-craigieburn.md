@@ -1,17 +1,19 @@
 ---
 pageName: how-we-fixed-a-leaky-roof-in-craigieburn
 blogTitle: How We Fixed a Leaky Roof in Craigieburn (And Chased a Cat Along the Way!)
-titleTag: How We Fixed a Leaky Roof in Craigieburn
-blogDescription: In this story, we helped Mr. Jonathan, a kind
+titleTag: "How We Fixed a Leaky Roof in Craigieburn "
+blogDescription: In this heartwarming story, we helped Mr. Jonathan, a kind
   homeowner in Craigieburn, repair his leaky roof and restore peace to his
   beautiful two-story home. Along the way, we enjoyed homemade pie, chased a
   curious cat trying to join us on the roof, and made sure everything was fixed
-  just in time for the rain. 
+  just in time for the rain. Read on to discover how we turned a challenging job
+  into a memorable day and how we’re always ready to help with your roofing,
+  carpentry, and home repair needs.
 author: Michael
 date: 2024-10-22T23:13:12.008Z
 tags:
   - post
-image: /images/blog/roof-leak-repair-in-craigieburn.jpg
+image: https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 imageAlt: "How We Fixed a Leaky Roof in Craigieburn "
 featured: true
 ---
@@ -33,4 +35,4 @@ And the most fun part was enjoying the view from the roof of Mr. Jonathan’s be
 
 This story isn’t just about a fixed roof. It’s about the importance of having a home where you feel safe and knowing that any problem can be solved with the right people by your side.
 
-If your roof is leaking, or you need any repairs done, whether it’s painting, carpentry, or general home maintenance, we’re always ready to help. Just like we helped Mr. Jonathan, we’ll make sure your home is taken care of too!
+If your roof is leaking or you need any repairs done, whether it’s painting, carpentry, or general home maintenance, we’re always ready to help. Just like we helped Mr. Jonathan, we’ll make sure your home is taken care of too!
