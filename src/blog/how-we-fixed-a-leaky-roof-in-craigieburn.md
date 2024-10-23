@@ -13,7 +13,7 @@ author: Michael
 date: 2024-10-22T23:13:12.008Z
 tags:
   - post
-image: /images/blog/roof-leak-repair-in-craigieburn.webp
+image: /images/blog/roof-leak-repair-in-craigieburn.jpg
 imageAlt: "How We Fixed a Leaky Roof in Craigieburn "
 featured: true
 ---
