@@ -13,7 +13,7 @@ author: Michael
 date: 2024-10-22T23:13:12.008Z
 tags:
   - post
-image: https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 imageAlt: "How We Fixed a Leaky Roof in Craigieburn "
 featured: true
 ---
