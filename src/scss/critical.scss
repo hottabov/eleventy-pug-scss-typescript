@@ -3,6 +3,8 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 
+@import "functions";
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
 
@@ -11,8 +13,7 @@
     /* Centers button */
     text-align: center;
     /* changes on tablet */
-    padding: 0 (16 / 16) * 1rem;
-    padding-bottom: (100 / 16) * 1rem;
+    padding: 0 toRem(16) toRem(100);
     position: relative;
     z-index: 1;
     /* prevents overflow from the lines extending past the screen width */
@@ -57,10 +58,7 @@
 
     .cs-container {
       width: 100%;
-      max-width: (1280/16)*1em;
-      /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-      /* 144px - 280px - leaving extra space for the navigation */
-      /* changes on tablet */
+      max-width: toEm(1280); // Replaced manual calc with toEm
       padding: clamp(9em, 25.95vw, 17.5em) 0 ;
       margin: auto;
       position: relative;
@@ -70,8 +68,8 @@
         content: '';
         width: 1px;
         height: 100%;
-        background: -moz-linear-gradient(top, rgba(250,251,252,0.5) 0%, rgba(250,251,252,0) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(250,251,252,0.5) 0%,rgba(250,251,252,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: -moz-linear-gradient(top, rgba(250,251,252,0.5) 0%, rgba(250,251,252,0) 100%);
+        background: -webkit-linear-gradient(top, rgba(250,251,252,0.5) 0%,rgba(250,251,252,0) 100%);
         opacity: 1;
         position: absolute;
         display: block;
@@ -81,11 +79,9 @@
     }
 
     .cs-flex-group {
-      /* 60px - 220px */
       margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
       margin: auto;
       width: 80vw;
-      /* 464px - 562px */
       max-width: clamp(29em, 60vw, 50em);
       display: flex;
       align-items: flex-start;
@@ -95,7 +91,6 @@
     }
 
     .cs-topper {
-      /* 13px - 16px */
       font-size: clamp(.8125rem, 1.6vw, 1rem);
       line-height: 1.2em;
       text-transform: uppercase;
@@ -103,44 +98,38 @@
       letter-spacing: .1em;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom:  1rem;
+      margin-bottom: 1rem;
       display: block;
     }
 
     .cs-title {
-      /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.40vw, 3.8125rem);
       font-weight: 900;
       line-height: 1.2em;
       text-align: center;
       width: 100%;
-      /* 32px - 40px */
       margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
       color: var(--bodyTextColorWhite);
       position: relative;
     }
 
     .cs-text {
-      /* 16px - 20px */
       font-size: clamp(1rem, 1.95vw, 1.25rem);
       line-height: 1.5em;
       text-align: center;
       width: 100%;
-      /* 32px - 40px */
       margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-      /* 40px - 48px */
       margin-bottom: clamp(2.5rem, 4vw, 3rem);
       color: var(--bodyTextColorWhite);
     }
 
     .cs-button-solid {
-      font-size: (16 / 16) * 1rem;
-      /* 46px - 56px */
+      font-size: toRem(16);
       line-height: clamp(2.875em, 5.5vw, 3.5em);
-      width: (180 / 16) * 1rem;
+      width: toRem(180); // Using toRem
       text-decoration: none;
       font-weight: 700;
-      margin: 0 (8 / 16) * 1rem (16 / 16) * 1rem (8 / 16) * 1rem;
+      margin: 0 toRem(8) toRem(16) toRem(8); // Replaced manual calculation with toRem
       color: var(--headerColor);
       padding: 0;
       background-color: var(--primary);
@@ -148,7 +137,6 @@
       position: relative;
       z-index: 1;
       transition: color 0.3s;
-
 
       &:before {
         content: '';
@@ -173,15 +161,13 @@
     }
 
     .cs-button-transparent {
-      font-size: (16 / 16) * 1rem;
-      /* 46px - 56px */
+      font-size: toRem(16); // Replaced manual calculation with toRem
       line-height: clamp(2.875em, 5.5vw, 3.5em);
-      width: (180 / 16) * 1rem;
-      /* 46px - 56px */
+      width: toRem(180); // Replaced manual calculation with toRem
       height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
       font-weight: 700;
-      margin: 0 (8 / 16) * 1rem;
+      margin: 0 toRem(8); // Replaced manual calculation with toRem
       color: #fff;
       padding: 0;
       background-color: transparent;
@@ -199,14 +185,12 @@
         display: block;
         background: #000;
         opacity: 1;
-        /* so it sits on top of the border */
         top: -1px;
         left: -1px;
         right: -1px;
         bottom: -1px;
         z-index: -1;
         transform-origin: left;
-        /* this is what creates the grow effect on hover */
         transform: scaleX(0);
         transition: transform .3s;
       }
@@ -219,7 +203,7 @@
 
       .cs-img {
         display: block;
-        margin-right: (12 / 16) * 1rem;
+        margin-right: toRem(12); // Using toRem for rem conversion
       }
     }
   }
@@ -250,7 +234,7 @@
 
     .cs-button-solid {
       margin-bottom: 0;
-      margin-right: 2( 0 / 16) * 1rem;
+      margin-right: toRem(20);
     }
   }
 }
@@ -288,57 +272,60 @@
 @media only screen and (min-width: 0em) {
 
   .services {
-    border-radius: toEm(5);
+    border-radius: toEm(5); // Using toEm for consistent em conversion
     margin: auto;
-    margin-top: (-167/16)*1em;
+    margin-top: toEm(-167); // Using toEm for consistent em conversion
     position: relative;
     z-index: 100;
     background: #fff;
     width: 90%;
-    max-width: (1320/16)*1em;
-    padding: (50/16)*1em (20/16)*1em;
-    border-top: ( 6 / 16) * 1rem solid var(--primary);
-    //border-top: ( 6 / 16) * 1rem solid red;
+    max-width: toEm(1320); // Using toEm for consistent em conversion
+    padding: toEm(50) toEm(20); // Using toEm for consistent em conversion
+    border-top: toRem(6) solid var(--primary); // Using toRem for rem conversion
 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-    margin-bottom: (50/16)*1em;
+    margin-bottom: toEm(50); // Using toEm for consistent em conversion
+
     .card {
       display: block;
       width: 100%;
-      max-width: (357/16)*1em;
+      max-width: toEm(357); // Using toEm for consistent em conversion
       margin: auto;
-      margin-bottom: (50/16)*1em;
+      margin-bottom: toEm(50); // Using toEm for consistent em conversion
+
       &:last-of-type {
         margin-bottom: 0;
       }
 
       picture {
         background: var(--primary);
-        width: (88 / 16)*1em;
-        height: (88 / 16)*1em;
+        width: toEm(88); // Using toEm for consistent em conversion
+        height: toEm(88); // Using toEm for consistent em conversion
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
-        margin-bottom: (23 / 16)*1em;
+        margin-bottom: toEm(23); // Using toEm for consistent em conversion
         border-radius: 50%;
 
         img {
-          width: (48/16)*1em;
-          height: (48/16)*1em;
+          width: toEm(48); // Using toEm for consistent em conversion
+          height: toEm(48); // Using toEm for consistent em conversion
         }
       }
+
       h2 {
         text-align: center;
-        font-size: (32/16)*1em;
-        line-height: (27/20)*1em;
+        font-size: toEm(32); // Using toEm for consistent em conversion
+        line-height: toEm(27); // Using toEm for consistent em conversion
         font-weight: 700;
         color: #1a1a1a;
-        margin-bottom: (13/20)*1em;
+        margin-bottom: toEm(13); // Using toEm for consistent em conversion
       }
+
       p {
         text-align: center;
-        line-height: (24/18)*1em;
+        line-height: toEm(24); // Using toEm for consistent em conversion
         width: 100%;
         //opacity: .9;
       }
@@ -346,7 +333,7 @@
   }
 }
 
-/* Inbetween */
+/* In between */
 @media only screen and (min-width: 768px) {
   .services {
     font-size: min(1.8vw, 1em);
@@ -357,7 +344,7 @@
 
     .card {
       margin: 0;
-      max-width: (325/16)*1em;
+      max-width: toEm(325); // Using toEm for consistent em conversion
     }
   }
 }
@@ -365,10 +352,10 @@
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   .services {
-    padding: (50/16)*1em (80/16)*1em;
+    padding: toEm(50) toEm(80); // Using toEm for consistent em conversion
 
     .card {
-      max-width: (357/16)*1em;
+      max-width: toEm(357); // Using toEm for consistent em conversion
     }
   }
 }

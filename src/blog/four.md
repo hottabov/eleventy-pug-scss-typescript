@@ -5,12 +5,12 @@ pageName: hilarious-tales-from-a-professional-painter-in-melbourne​
 blogTitle: "Hilarious Tales from a Professional Painter in Melbourne: The
   Challenges of Interior and Exterior Painting"
 blogDescription: Here is another test post to make sure that everything is sound and smooth
-author: Vadym Leonov
+author: Michael
 date: 2024-09-26T05:50:45.417Z
 tags:
   - post
 image: https://cdn.pixabay.com/photo/2023/12/17/09/47/door-8453898_1280.jpg
-imageAlt: Mountains
+imageAlt: Beautiful house
 featured: true
 ---
 ## **Table of Contents**

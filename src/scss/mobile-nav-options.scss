@@ -1,3 +1,5 @@
+@import "functions";
+
 /* Mobile - Top Drop Down */
 
 @media only screen and (max-width: 1023px) {
@@ -22,14 +24,14 @@
     }
 
     .container {
-      padding: 13/16em 0;
+      padding: toEm(13) 0;
       width: 96%;
     }
 
     // Logo
     .logo {
       display: inline-block;
-      height: 30/16em ;
+      height: toEm(30);
       width: auto;
 
       img {
@@ -49,10 +51,10 @@
     // Hamburger Menu Default State
     .hamburger-menu {
       position: absolute;
-      right: 0/16em;
+      right: 0;
       border: none;
-      height: 48/16em;
-      width: 48/16em;
+      height: toEm(48);
+      width: toEm(48);
       z-index: 100;
       display: block;
       background: transparent;
@@ -63,7 +65,7 @@
 
       span {
         height: 2px;
-        width: 30/16em;
+        width: toEm(30);
         background-color: #000;
         display: block;
         position: absolute;
@@ -131,15 +133,12 @@
       right: 0;
       padding: 0;
       width: 100%;
-      border-radius: 0 0 ( 6 / 16) * 1rem ( 6 / 16) * 1rem;
+      border-radius: 0 0 toRem(6) toRem(6);
       z-index: -1;
       overflow: hidden;
       box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
       background-color: #fff;
-      top: 64/16em; // same as #navigation height
-
-      //Transition Properties
-      padding-top: 0;
+      top: toEm(64); // same as #navigation height
       height: 0;
       transition: height .3s, padding-top .3s, top .3s;
 
@@ -149,7 +148,7 @@
         perspective: 700px;
         li {
           list-style: none;
-          margin-bottom: 24/16em;
+          margin-bottom: toEm(24);
           text-align: center;
           //Transition Properties
           transform-style: preserve-3d;
@@ -177,7 +176,7 @@
             text-decoration: none;
             text-transform: uppercase;
             color: #000;
-            font-size: 19/16em;
+            font-size: toEm(19);
             text-align: center;
             display: inline-block;
             position: relative;
@@ -189,13 +188,13 @@
                 content: '';
                 position: absolute;
                 display: block;
-                height: 8/19em;
+                height: toEm(8);
                 background: var(--primary);
                 opacity: 1;
-                bottom: 5/19em;
-                border-radius: 4/19em;
-                left: -6/19em;
-                right: -6/19em;
+                bottom: toEm(5);
+                border-radius: toEm(4);
+                left: toEm(-6);
+                right: toEm(-6);
                 z-index: -1;
               }
             }
@@ -206,8 +205,8 @@
 
     // Navbar Menu Open State
     #navbar-menu.open {
-      height: 30( 6 / 16) * 1rem;
-      padding-top: 20/16em;
+      height: toRem(30);
+      padding-top: toEm(20);
       z-index: -100;
 
       ul {
@@ -247,14 +246,14 @@
     }
 
     .container {
-      padding: 13/16em 0;
+      padding: toEm(13) 0;
       width: 96%;
     }
 
     // Logo
     .logo {
       display: inline-block;
-      height: 30/16em ;
+      height: toEm(30);
       width: auto;
 
       img {
@@ -274,10 +273,10 @@
     // Hamburger Menu Default State
     .hamburger-menu {
       position: absolute;
-      right: 0/16em;
+      right: 0;
       border: none;
-      height: 48/16em;
-      width: 48/16em;
+      height: toEm(48);
+      width: toEm(48);
       z-index: 100;
       display: block;
       background: transparent;
@@ -288,7 +287,7 @@
 
       span {
         height: 2px;
-        width: 30/16em;
+        width: toEm(30);
         background-color: #000;
         display: block;
         position: absolute;
@@ -356,27 +355,22 @@
       right: 0;
       padding: 0;
       height: 100%;
-      border-radius: 0 0 ( 6 / 16) * 1rem ( 6 / 16) * 1rem;
+      border-radius: 0 0 toRem(6) toRem(6);
       z-index: -1;
       overflow: hidden;
       box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
       background-color: #fff;
-      top: 64/16em; // same as #navigation height
-
-      //Transition Properties
-      padding-top: 0;
-      width: 0/16em;
+      top: toEm(64); // same as #navigation height
+      width: 0;
       transition: width .3s;
 
 
       ul {
-        padding: 0;
         perspective: 700px;
-        padding-right: 20/16em;
-        padding-top: 50/16em;
+        padding: toEm(50) toEm(20) 0 0;
         li {
           list-style: none;
-          margin-bottom: 24/16em;
+          margin-bottom: toEm(24);
           text-align: right;
           //Transition Properties
           transform-style: preserve-3d;
@@ -404,7 +398,7 @@
             text-decoration: none;
             text-transform: uppercase;
             color: #000;
-            font-size: 19/16em;
+            font-size: toEm(19);
             text-align: center;
             display: inline-block;
             position: relative;
@@ -416,13 +410,13 @@
                 content: '';
                 position: absolute;
                 display: block;
-                height: 8/19em;
+                height: toEm(8);
                 background: var(--primary);
                 opacity: 1;
-                bottom: 5/19em;
-                border-radius: 4/19em;
-                left: -6/19em;
-                right: -6/19em;
+                bottom: toEm(5);
+                border-radius: toEm(4);
+                left: toEm(-6);
+                right: toEm(-6);
                 z-index: -1;
               }
             }
@@ -433,7 +427,7 @@
 
     // Navbar Menu Open State
     #navbar-menu.open {
-      width: 250/16em;
+      width: toEm(250);
       z-index: -100;
 
       ul {

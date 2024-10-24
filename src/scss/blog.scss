@@ -1,8 +1,8 @@
-
-
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
+
+@import "functions";
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -21,10 +21,9 @@
 
   .blog-container {
     width: 94%;
-    max-width: (1120/16)*1em;
+    max-width: toEm(1120); // Using toEm for consistent em conversion
     margin: auto;
   }
-
 
   .blog-link {
     font-size: 1rem;
@@ -35,10 +34,10 @@
     text-align: center;
     margin: auto;
     color: #fff;
-    min-width: (150/16)*1rem;
-    padding: 0 (24/16)*1rem;
+    min-width: toRem(150); // Using toRem for consistent rem conversion
+    padding: 0 toRem(24); // Using toRem for consistent rem conversion
     background-color: var(--bodyHeader);
-    border-radius: (4/16)*1rem;
+    border-radius: toRem(4); // Using toRem for consistent rem conversion
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -57,7 +56,7 @@
       left: 0;
       box-sizing: border-box;
       z-index: -1;
-      border-radius: (4/16)*1rem;
+      border-radius: toRem(4); // Using toRem for consistent rem conversion
       transition: opacity .3s;
       border: 1px solid var(--bodyHeader);
       z-index: -1;
@@ -135,75 +134,6 @@
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
 
-/* Mobile */
-@media only screen and (min-width: 0em) {
-
-  //#int-hero {
-  //  display: flex;
-  //  justify-content: center;
-  //  align-items: center;
-  //  flex-direction: column;
-  //  position: relative;
-  //  z-index: 1;
-  //  min-height: 30vh;
-  //  padding-top: (50/16)*1  rem;
-  //
-  //  &:before {
-  //    content: '';
-  //    position: absolute;
-  //    display: block;
-  //    height: 100%;
-  //    width: 100%;
-  //    background: #000;
-  //    opacity: .7;
-  //    top: 0;
-  //    left: 0;
-  //    z-index: -1;
-  //  }
-  //
-  //  picture {
-  //    position: absolute;
-  //    top: 0;
-  //    left: 0;
-  //    height: 100%;
-  //    width: 100%;
-  //    z-index: -2;
-  //
-  //    img {
-  //      position: absolute;
-  //      top: 0;
-  //      left: 0;
-  //      height: 100%;
-  //      width: 100%;
-  //      object-fit: cover;
-  //    }
-  //  }
-  //
-  //  h1 {
-  //    color: #fff;
-  //    font-size: (64/30)*1rem;
-  //    text-align: center;
-  //    margin: 0 auto;
-  //    position: relative;
-  //    width: 96%;
-  //    max-width: (500/16)*1em;
-  //    margin-top: (70/16)*1em;
-  //    margin-bottom: (30/16)*1rem;
-  //  }
-  //
-  //  p {
-  //    color: #fff;
-  //    text-align: center;
-  //    max-width: 400/16rem;
-  //    margin: auto;
-  //    margin-bottom: (30/16)*1rem;
-  //    display: block;
-  //    width: 96%;
-  //  }
-  //}
-
-}
-
 /* Tablet */
 @media only screen and (min-width: 48em) {
 
@@ -211,7 +141,7 @@
     font-size: 100%;
 
     h1 {
-      font-size: (64/16)*1rem;
+      font-size: toRem(64);
     }
   }
 }
@@ -220,10 +150,10 @@
 @media only screen and (min-width: 64em) {
 
   #int-hero {
-    min-height: (300/16)*1rem;
+    min-height: toRem(300); // Using toRem for rem conversion
     height: auto;
-    padding-top: (180/16)*1rem;
-    padding-block-end: (100/16)*1rem;
+    padding-top: toRem(180); // Using toRem for rem conversion
+    padding-block-end: toRem(100); // Using toRem for rem conversion
     background-attachment: fixed;
     font-size: inherit;
   }
@@ -244,7 +174,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: (50/16)*1em;
+    row-gap: toEm(50); // Using toEm for consistent em conversion
   }
 
   .main-content {
@@ -252,7 +182,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: (50/16)*1em;
+    row-gap: toEm(50); // Using toEm for consistent em conversion
     width: 100%;
   }
 }
@@ -262,7 +192,7 @@
   .main-content-wrapper {
     flex-direction: row;
     align-items: flex-start;
-    column-gap: (20/16)*1em;
+    column-gap: toEm(20); // Using toEm for consistent em conversion
   }
 }
 
@@ -274,7 +204,7 @@
 @media only screen and (min-width: 0em) {
   .recent-articles {
     overflow: hidden;
-    max-width: (795/16)*1em;
+    max-width: toEm(795); // Using toEm for consistent em conversion
     flex: none;
     width: 100%;
 
@@ -283,7 +213,7 @@
       height: clamp(200px, 30vw, 400px);
       position: relative;
       display: block;
-      border-radius: (8/16)*1em (8/16)*1em 0 0;
+      border-radius: toEm(8) toEm(8) 0 0; // Using toEm for consistent em conversion
       overflow: hidden;
 
       img {
@@ -299,12 +229,12 @@
     .article-group {
       padding: clamp(30px, 5vw, 50px);
       border: 1px solid #ebebeb;
-      border-radius: 0 0 (8/16)*1em (8/16)*1em;
+      border-radius: 0 0 toEm(8) toEm(8); // Using toEm for consistent em conversion
     }
 
     .blog-author-img {
-      width: (32/16)*1em;
-      height: (32/16)*1em;
+      width: toEm(32); // Using toEm for consistent em conversion
+      height: toEm(32); // Using toEm for consistent em conversion
       position: relative;
       display: block;
       border-radius: 50%;
@@ -324,11 +254,11 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: (12/16)*1rem;
+      gap: toRem(12); // Using toRem for consistent rem conversion
     }
 
     .blog-author, .blog-date {
-      font-size: (14/16)*1rem;
+      font-size: toRem(14); // Using toRem for consistent rem conversion
       color: var(--bodyText);
       line-height: 1.5em;
     }
@@ -352,29 +282,26 @@
     .blog-desc {
       font-size: 1rem;
       line-height: 1.5em;
-      margin: 1rem 0 (32/16)*1rem;
+      margin: 1rem 0 toRem(32); // Using toRem for consistent rem conversion
       color: var(--bodyText);
     }
 
     .blog-link {
       font-size: 1rem;
-      /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
       font-weight: 700;
       text-align: center;
       margin: auto;
       color: #fff;
-      min-width: (150/16)*1rem;
-      padding: 0 (24/16)*1rem;
+      min-width: toRem(150); // Using toRem for consistent rem conversion
+      padding: 0 toRem(24); // Using toRem for consistent rem conversion
       background-color: var(--bodyHeader);
-      border-radius: (4/16)*1rem;
+      border-radius: toRem(4); // Using toRem for consistent rem conversion
       display: inline-block;
       position: relative;
       z-index: 1;
-      /* prevents padding from adding to the width */
       box-sizing: border-box;
-      z-index: 1;
       transition: color .3s;
 
       &:before {
@@ -388,10 +315,9 @@
         left: 0;
         box-sizing: border-box;
         z-index: -1;
-        border-radius: (4/16)*1rem;
+        border-radius: toRem(4); // Using toRem for consistent rem conversion
         transition: opacity .3s;
         border: 1px solid var(--bodyHeader);
-        z-index: -1;
       }
 
       &:hover {
@@ -408,7 +334,7 @@
 @media only screen and (min-width: 64em) {
   .recent-articles {
     .blog-h1 {
-      max-width: (500/16)*1em;
+      max-width: toEm(500); // Using toEm for consistent em conversion
     }
   }
 }
@@ -461,19 +387,19 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-sidebar {
-    max-width: (795/16)*1em;
+    max-width: toEm(795); // Using toEm for consistent em conversion
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    row-gap: (50/16)*1em;
+    row-gap: toEm(50); // Using toEm for consistent em conversion
 
     .blog-featured-group {
-      padding: (35/16)*1em (30/16)*1em;
+      padding: toEm(35) toEm(30); // Using toEm for consistent em conversion
       border: 1px solid #ebebeb;
-      border-radius: (8/16)*1em;
+      border-radius: toEm(8); // Using toEm for consistent em conversion
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -483,21 +409,21 @@
 
     .blog-header {
       display: block;
-      font-size: (20/16)*1em;
+      font-size: toEm(20); // Using toEm for consistent em conversion
       color: var(--bodyHeader);
       font-weight: bold;
       text-align: center;
       position: relative;
-      margin-bottom: (30/16)*1rem;
+      margin-bottom: toRem(30); // Using toRem for consistent rem conversion
 
       &:after {
         content: '';
         position: relative;
         display: block;
-        width: (50/16)*1rem;
+        width: toRem(50); // Using toRem for consistent rem conversion
         height: 3px;
         background: var(--bodyHeader);
-        border-radius: (4/16)*1rem;
+        border-radius: toRem(4); // Using toRem for consistent rem conversion
         margin: 1rem auto;
       }
     }
@@ -506,10 +432,10 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      column-gap: (24/16)*1em;
+      column-gap: toEm(24); // Using toEm for consistent em conversion
       width: 100%;
       text-decoration: none;
-      padding: (20/16)*1rem 0;
+      padding: toRem(20) 0; // Using toRem for consistent rem conversion
       border-bottom: 1px solid #ebebeb;
 
       &:nth-of-type(1) {
@@ -527,8 +453,8 @@
       position: relative;
       border-radius: 50%;
       overflow: hidden;
-      width: (60/16)*1em;
-      height: (60/16)*1em;
+      width: toEm(60); // Using toEm for consistent em conversion
+      height: toEm(60); // Using toEm for consistent em conversion
       flex: none;
 
       img {
@@ -542,18 +468,18 @@
     }
 
     .feature-h3 {
-      font-size: 15/16rem;
+      font-size: toRem(15); // Using toRem for consistent rem conversion
       line-height: 1.5em;
       color: var(--bodyHeader);
       margin: 0;
-      margin-bottom: (4/16)*1rem;
+      margin-bottom: toRem(4); // Using toRem for consistent rem conversion
       font-weight: 700;
       display: block;
       text-decoration: none;
     }
 
     .feature-date {
-      font-size: (14/16)*1rem;
+      font-size: toRem(14); // Using toRem for consistent rem conversion
       line-height: 1.5em;
       color: var(--bodyText);
       display: block;
@@ -564,7 +490,7 @@
 /* Tablet - 1024px */
 @media only screen and (min-width: 64em) {
   .blog-sidebar {
-    max-width: (360/16)*1em;
+    max-width: toEm(360); // Using toEm for consistent em conversion
   }
 }
 
@@ -575,17 +501,18 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-article {
-    max-width: (795/16)*1em;
+    max-width: toEm(795); // Using toEm for consistent em conversion
     width: 100%;
     display: block;
+
     .blog-mainImage {
       width: 100%;
       height: clamp(200px, 30vw, 400px);
       position: relative;
       display: block;
-      border-radius: (8/16)*1em;
+      border-radius: toEm(8); // Using toEm for consistent em conversion
       overflow: hidden;
-      margin-bottom: (50/16)*1em;
+      margin-bottom: toEm(50); // Using toEm for consistent em conversion
 
       img {
         position: absolute;
@@ -598,8 +525,8 @@
     }
 
     .blog-author-img {
-      width: (32/16)*1em;
-      height: (32/16)*1em;
+      width: toEm(32); // Using toEm for consistent em conversion
+      height: toEm(32); // Using toEm for consistent em conversion
       position: relative;
       display: block;
       border-radius: 50%;
@@ -619,11 +546,11 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: (12/16)*1rem;
+      gap: toRem(12); // Using toRem for consistent rem conversion
     }
 
     .blog-author, .blog-date {
-      font-size: (14/16)*1rem;
+      font-size: toRem(14); // Using toRem for consistent rem conversion
       color: var(--bodyText);
       line-height: 1.5em;
     }
@@ -641,17 +568,17 @@
       line-height: 1.4em;
       font-weight: 700;
       margin: 1rem 0;
-      max-width: (550/16)*1rem;
+      max-width: toRem(550); // Using toRem for consistent rem conversion
       color: var(--bodyHeader);
     }
 
     #blog-content {
-      padding-top: (25/16)*1em;
+      padding-top: toEm(25); // Using toEm for consistent em conversion
       margin-top: 1em;
       border-top: 1px solid #ebebeb;
 
       h2 {
-        font-size: (28/16)*1rem;
+        font-size: toRem(28); // Using toRem for consistent rem conversion
         line-height: 1.5em;
         color: var(--bodyHeader);
         font-weight: 700;
@@ -659,7 +586,7 @@
       }
 
       h3 {
-        font-size: (24/16)*1rem;
+        font-size: toRem(24); // Using toRem for consistent rem conversion
         line-height: 1.5em;
         color: var(--bodyHeader);
         font-weight: 700;
@@ -667,7 +594,7 @@
       }
 
       h4, h5, h6 {
-        font-size: (20/16)*1rem;
+        font-size: toRem(20); // Using toRem for consistent rem conversion
         line-height: 1.5em;
         color: var(--bodyHeader);
         font-weight: 700;
@@ -688,7 +615,7 @@
       }
 
       ul, ol {
-        padding-left: (40/16)*1rem;
+        padding-left: toRem(40); // Using toRem for consistent rem conversion
         margin: 0;
 
         li {
@@ -705,7 +632,7 @@
         height: auto;
         display: block;
         margin: 1rem 0;
-        border-radius: (8/16)*1rem;
+        border-radius: toRem(8); // Using toRem for consistent rem conversion
       }
     }
   }
@@ -726,7 +653,7 @@
 
     .cs-container {
       width: 100%;
-      max-width: (1280/16)*1rem;
+      max-width: toRem(1280); // Using toRem for consistent rem conversion
       margin: auto;
     }
 
@@ -754,9 +681,9 @@
       /* 14px - 16px */
       font-size: clamp(.875rem, 2.5vw, 1rem);
       line-height: 1.5em;
-      margin: 0 0 (40/16)*1rem;
+      margin: 0 0 toRem(40); // Using toRem for consistent rem conversion
       /* changes to 521px at desktop */
-      max-width:  (344/16)*1rem;
+      max-width: toRem(344); // Using toRem for consistent rem conversion
       color: var(--bodyTextColorWhite);
     }
 
@@ -780,7 +707,7 @@
       font-size: 1rem;
       line-height: 1.5em;
       font-weight: 700;
-      margin-bottom: (20/16)*1rem;
+      margin-bottom: toRem(20); // Using toRem for consistent rem conversion
       color: var(--bodyTextColorWhite);
       position: relative;
       display: block;
@@ -797,13 +724,13 @@
         /* underline */
         content: '';
         width: 0;
-        height: (2/16)*1rem;
+        height: toRem(2); // Using toRem for consistent rem conversion
         /* current color of the parent */
         background: currentColor;
         opacity: 1;
         position: absolute;
         display: block;
-        bottom: (-2/16)*1rem;
+        bottom: toRem(-2); // Using toRem for consistent rem conversion
         left: 0;
         transition: width .3s;
       }
@@ -832,15 +759,15 @@
       display: inline-flex;
       justify-content: flex-start;
       flex-direction: column;
-      gap: (12/16)*1em;
+      gap: toEm(12); // Using toEm for consistent em conversion
       position: absolute;
       right: 1em;
       bottom: 0;
     }
 
     .cs-social-link {
-      width: (24/16)*1rem;
-      height: (24/16)*1rem;
+      width: toRem(24); // Using toRem for consistent rem conversion
+      height: toRem(24); // Using toRem for consistent rem conversion
       background-color: #4E4B66;
       border-radius: 50%;
       display: flex;
@@ -852,12 +779,12 @@
 
       &:hover {
         background-color: var(--primary);
-        transform: translateY( (-3/16)*1rem );
+        transform: translateY(toRem(-3)); // Using toRem for consistent rem conversion
       }
     }
 
     .cs-social-img {
-      height: (13/16)*1rem;
+      height: toRem(13); // Using toRem for consistent rem conversion
       width: auto;
       display: block;
     }
@@ -896,7 +823,7 @@
     .cs-text {
       text-align: right;
       width: 50%;
-      max-width: (521/16)*1rem;
+      max-width: toRem(521); // Using toRem for consistent rem conversion
       margin: 0;
     }
 

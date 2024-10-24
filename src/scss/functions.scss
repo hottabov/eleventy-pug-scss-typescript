@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Breakpoints
 $breakpoints: (
         "phone":        400px,
@@ -34,12 +36,12 @@ $breakpoints: (
 
 // pixels to rem
 @function toRem($value) {
-  $remValue: ($value / 16) * 1rem;
+  $remValue: math.div($value, 16) * 1rem;
   @return $remValue;
 }
 
 // pixels to em
 @function toEm($value) {
-  $remValue: ($value / 16) * 1em;
+  $remValue: math.div($value, 16) * 1em;
   @return $remValue;
 }

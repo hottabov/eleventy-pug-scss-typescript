@@ -2,26 +2,28 @@
 <---           Reviews          -->
 <--- -------------------------- -*/
 
+@import "functions";
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #reviews {
-    padding-top: (120 / 16) * 1rem;
-    padding-bottom: (50 / 16) * 1rem;
+    padding-top: toRem(120);
+    padding-bottom: toRem(50);
     margin: auto;
 
     .container {
       width: 96%;
-      max-width: (1320 / 16) * 1rem;
+      max-width: toRem(1320);
     }
 
     .review {
-      padding: (64 / 16) * 1rem ( 30 / 16) * 1rem (18 / 16) * 1rem ( 30 / 16) * 1rem;
+      padding: toRem(64) toRem(30) toRem(18) toRem(30);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
       width: 100%;
-      max-width: (410 / 16) * 1rem;
+      max-width: toRem(410);
       margin: auto;
-      margin-bottom: (100 / 16) * 1rem;
-      border-radius: (5/16)*1rem;
+      margin-bottom: toRem(100);
+      border-radius: toRem(5);
       position: relative;
       background: #fff;
       display: flex;
@@ -32,19 +34,19 @@
 
       .profile {
         display: block;
-        height: (99/16)*1rem;
-        width: (99/16)*1rem;
+        height: toRem(99);
+        width: toRem(99);
         margin-left: 0;
         border-radius: 50%;
         margin-bottom:  1rem;
         position: absolute;
-        left: ( 30 / 16) * 1rem;
-        top: (-51/16)*1rem;
+        left: toRem(30);
+        top: toRem(-51);
       }
 
       p {
         line-height: calc(24/18);
-        margin-bottom: ( 18 / 16) * 1rem;
+        margin-bottom: toRem(18);
         text-align: left;
       }
 
@@ -59,7 +61,7 @@
 
         .name {
           color: #1A1A1A;
-          line-height: ( 24 / 16) * 1rem;
+          line-height: toRem(24);
           text-align: left;
           font-weight: bold;
           display: block;
@@ -73,8 +75,8 @@
 
         img {
           display: block;
-          width: (91/16)*1rem;
-          height: (15/16)*1rem;
+          width: toRem(91);
+          height: toRem(15);
           margin: 0;
         }
       }
@@ -86,24 +88,23 @@
 @media only screen and (min-width: 48em) {
 
   #reviews {
-    padding-top: (150 / 16) * 1rem;
-    padding-bottom: (50 / 16) * 1rem;
+    padding-top: toRem(150);
+    padding-bottom: toRem(50);
 
     .container {
-      font-size:min(1.4vw, 1em);
+      font-size: min(1.4vw, 1em);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       padding: 0;
-      column-gap: (30 / 16) * 1rem;
+      column-gap: toRem(30);
     }
 
     .review {
-      margin: 0;
-      margin-bottom: (150 / 16) * 1rem;
+      margin: 0 0 toRem(150);
 
       &:last-of-type {
-        margin-bottom: (150 / 16) * 1rem;
+        margin-bottom: toRem(150);
       }
     }
   }
@@ -137,7 +138,7 @@
 @media only screen and (min-width: 0em) {
   #cta {
     position: relative;
-    padding: (50 / 16) * 1rem 0;
+    padding: toRem(50) 0;
 
     &:before {
       content: '';
@@ -177,10 +178,10 @@
     .title {
       font-weight: 900;
       font-size: min(9vw, 3rem);
-      line-height: 58/48;
+      line-height: calc(58/48);
       color: #fff;
       position: relative;
-      margin-bottom: (36/16)*1rem;
+      margin-bottom: toRem(36);
       text-align: center;
     }
 
@@ -188,9 +189,9 @@
       color: #fff;
       text-align: center;
       opacity: 1;
-      margin: auto auto (36/16)*1rem;
+      margin: auto auto toRem(36);
       width: 96%;
-      max-width: (598 / 16) * 1rem;
+      max-width: toRem(598);
 
     }
   }
@@ -199,7 +200,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
-    padding: (168 / 16) * 1rem 0;
+    padding: toRem(168) 0;
   }
 }
 
@@ -207,7 +208,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: (100 / 16) * 1rem;
+    margin-top: toRem(100);
     &:before {
       display: none;
     }
@@ -215,8 +216,8 @@
       content: '';
       position: absolute;
       display: block;
-      height: (1108 / 16) * 1rem;
-      width: (2000 / 16) * 1rem;
+      height: toRem(1108);
+      width: toRem(2000);
       background: url("/assets/svgs/cta-squares.svg");
       background-size: contain;
       background-position: center;

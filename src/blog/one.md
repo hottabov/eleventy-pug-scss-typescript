@@ -8,7 +8,7 @@ blogDescription: In this post, I share my experience dealing with roof issues in
   maintenance, explore different roofing materials like terracotta and Colorbond
   steel, and offer practical advice for homeowners based on my own roof repair
   journey.
-author: Vadym Leonov
+author: Michael
 date: 2024-10-17T00:24:39.771Z
 tags:
   - post

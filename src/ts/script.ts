@@ -3,7 +3,7 @@
 //
 const stickHeader = (): void => {
     document.addEventListener('scroll', () => {
-        const scroll = document.documentElement.scrollTop;
+        const scroll = window.scrollY; // Use window.scrollY to detect scroll position
         const bodyElement = document.querySelector('body');
         if (scroll >= 100) {
             bodyElement?.classList.add('scroll');
@@ -11,7 +11,7 @@ const stickHeader = (): void => {
             bodyElement?.classList.remove('scroll');
         }
     });
-}
+};
 
 //
 //    The Dark Mode System
@@ -64,20 +64,54 @@ const darkMode = (): void => {
 const mobileNav = (): void => {
     const navbarMenu = document.querySelector<HTMLElement>("#navigation #navbar-menu");
     const hamburgerMenu = document.querySelector<HTMLElement>("#navigation .hamburger-menu");
+    const body = document.body;
 
-    hamburgerMenu?.addEventListener('click', function () {
+    // Function to close the menu and re-enable scrolling
+    const closeMenu = (): void => {
+        hamburgerMenu?.setAttribute("aria-expanded", "false");
+        hamburgerMenu?.classList.remove("clicked");
+        navbarMenu?.classList.remove("open");
+        body.classList.remove("no-scroll"); // Remove class to enable scrolling
+        document.removeEventListener('touchmove', preventScroll, { passive: false } as EventListenerOptions); // Re-enable touch scrolling
+        document.removeEventListener('click', outsideClickListener); // Remove click listener for outside clicks
+    };
+
+    // Function to toggle menu and prevent scrolling when the menu is open
+    hamburgerMenu?.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent immediate menu closing
         const isNavOpen = navbarMenu?.classList.contains("open");
         if (!isNavOpen) {
-            hamburgerMenu.setAttribute("aria-expanded", "true"); // Convert boolean to string
+            hamburgerMenu.setAttribute("aria-expanded", "true");
             hamburgerMenu.classList.add("clicked");
             navbarMenu?.classList.add("open");
+            body.classList.add("no-scroll"); // Add class to prevent scrolling
+            document.addEventListener('touchmove', preventScroll, { passive: false }); // Prevent touch scrolling on mobile devices
+
+            // Add event listener for clicks outside the menu
+            document.addEventListener('click', outsideClickListener);
+
+            // Add event listener for clicks on links inside the menu
+            const menuLinks = navbarMenu?.querySelectorAll<HTMLAnchorElement>("a");
+            menuLinks?.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
         } else {
-            hamburgerMenu.setAttribute("aria-expanded", "false"); // Convert boolean to string
-            hamburgerMenu.classList.remove("clicked");
-            navbarMenu?.classList.remove("open");
+            closeMenu();
         }
     });
-}
+
+    // Function to detect clicks outside the menu
+    const outsideClickListener = (event: MouseEvent): void => {
+        if (!navbarMenu?.contains(event.target as Node) && !hamburgerMenu?.contains(event.target as Node)) {
+            closeMenu();
+        }
+    };
+
+    // Function to prevent scrolling
+    const preventScroll = (event: TouchEvent): void => {
+        event.preventDefault(); // Prevents touch scrolling
+    };
+};
 
 //
 // Forward UTM to other pages - can be useful for analytics

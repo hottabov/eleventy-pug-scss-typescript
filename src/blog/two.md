@@ -7,7 +7,7 @@ blogDescription: "In this story, I share how I helped an elderly woman in need
   with some carpentry work around her home. From fixing a broken door to
   building a friendship, this story is about more than just tools and wood—it’s
   about lending a hand and the connections we make along the way. "
-author: Vadym Leonov
+author: Michael
 date: 2023-05-04T20:45:03.587Z
 tags:
   - post

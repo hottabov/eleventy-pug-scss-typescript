@@ -2,6 +2,8 @@
 <---      Core Dark Styles      -->
 <--- -------------------------- -*/
 
+@import "functions";
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
@@ -63,31 +65,30 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: ( 60 / 16) * 1rem;
-    width: ( 48 / 16) * 1rem;
-    height: ( 48 / 16) * 1rem;
+    right: toRem(60); // Using toRem for rem conversion
+    width: toRem(48); // Using toRem for rem conversion
+    height: toRem(48); // Using toRem for rem conversion
     background: transparent;
     border: none;
     overflow: hidden;
     padding: 0;
 
-    //center image inside button
+    // center image inside button
     img, svg {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: (25/16)*1rem;
-      height: (25/16)*1rem;
+      width: toRem(25); // Using toRem for rem conversion
+      height: toRem(25); // Using toRem for rem conversion
       pointer-events: none;
-
     }
 
     .moon {
       z-index: 2;
       // Transition properties
       transition: transform .3s, opacity .3s, fill .3s;
-      fill: #000; // --> change the color of the moon graphic based ont he background being lighter or darker
+      fill: #000; // --> change the color of the moon graphic based on the background being lighter or darker
     }
 
     .sun {
@@ -97,7 +98,6 @@
       opacity: 0;
       transition: transform .3s, opacity .3s;
     }
-
   }
 }
 
@@ -108,8 +108,8 @@
     top: auto;
     right: auto;
     transform: none;
-    margin-left: ( 30 / 16) * 1rem;
-    margin-bottom: ( 0 / 16) * 1rem;
+    margin-left: toRem(30);
+    margin-bottom: 0;
 
     .moon {
       fill: #fff;

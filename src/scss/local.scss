@@ -11,25 +11,25 @@
 
     .cs-container {
       width: 100%;
-      max-width: (1280 / 16) * 1rem;
+      max-width: toRem(1280);
       margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      row-gap: (40 / 16) * 1rem;
+      row-gap: toRem(40);
     }
 
     .cs-left {
       /* scaling the font size with the view width */
       font-size: min(2.31vw, .7em);
       /* using ems so we can use font size to scale the whole section */
-      width: (631/16)*1em;
+      width: toEm(631);
       height: toRem(520);
       position: relative;
 
       picture {
-        border-radius: (24 / 16) * 1em;
+        border-radius: toEm(24);
         /* clips img tag corners */
         overflow: hidden;
         position: absolute;
@@ -40,15 +40,14 @@
         border: clamp(.375em, 1.5vw, .75em) solid #fff;
 
         &:nth-child(1) {
-          width: (522/16)*1em;
-          height: (581/16)*1em;
+          width: toEm(522);
+          height: toEm(581);
           left: 0;
           top: 0;
         }
         &:nth-child(2) {
-          width: (414/16)*1em;
-          height: (400/16)*1em;
-
+          width: toEm(414);
+          height: toEm(400);
           right: 0;
           bottom: 0;
         }
@@ -67,7 +66,7 @@
 
     .cs-right {
       margin: auto;
-      max-width: (542 / 16 ) * 1rem;
+      max-width: toRem(542);
     }
 
     .cs-topper {
@@ -78,7 +77,7 @@
       letter-spacing: .1em;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: (4 / 16) * 1rem;
+      margin-bottom: toRem(4);
       display: block;
     }
 
@@ -87,7 +86,7 @@
       font-weight: 900;
       line-height: 1.2em;
       text-align: left;
-      max-width: (800 / 16) * 1rem;
+      max-width: toRem(800);
       margin: 0 auto 1rem;
       color: var(--headerColor);
       position: relative;
@@ -98,13 +97,13 @@
       line-height: 1.5em;
       text-align: left;
       width: 100%;
-      max-width: (750 / 16) * 1rem;
+      max-width: toRem(750);
       margin: 0 auto;
       margin-bottom: 1rem;
       color: var(--bodyTextColor);
 
       &:last-of-type {
-        margin-bottom: ( 32 / 16 ) * 1rem;
+        margin-bottom: toRem(32);
       }
     }
 
@@ -129,13 +128,13 @@
       line-height: 1.2em;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 0 0 ( 4 / 16) * 1rem;
+      margin: 0 0 toRem(4);
       color: var(--headerColor);
       display: block;
     }
 
     .cs-job {
-      font-size: ( 14 / 16) * 1rem;
+      font-size: toRem(14);
       line-height: 1.5em;
       color: #767676;
       display: block;
@@ -146,13 +145,13 @@
       width: clamp(3.75rem, 10vw, 8.5rem);
       height: auto;
       position: absolute;
-      bottom: ( 0 / 16) * 1rem;
+      bottom: toRem(0);
       /* 16px - 32px */
       right: clamp(1rem, 4vw, 2rem);
     }
 
     .button-solid {
-      margin-top: ( 32 / 16 ) * 1rem;
+      margin-top: toRem(32);
     }
   }
 }
@@ -163,7 +162,7 @@
     .cs-container {
       flex-flow: row;
       justify-content: space-between;
-      gap: ( 52 / 16 ) * 1rem;
+      gap: toRem(52); // Using toRem for rem conversion
     }
 
     .cs-left {
@@ -230,40 +229,40 @@
 
     .cs-container {
       width: 100%;
-      max-width: ( 1280 / 16) * 1rem;
+      max-width: toRem(1280);
       margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      row-gap: ( 40 / 16) * 1rem;
+      row-gap: toRem(40);
     }
 
     .cs-left {
       /* scaling the font size with the view width */
       font-size: min(2.31vw, .7em);
       /* using ems so we can use font size to scale the whole section */
-      width: (631/16)*1em;
+      width: toEm(631);
       height: toRem(540);
       position: relative;
 
       picture {
-        border-radius: (24/16)*1em;
+        border-radius: toEm(24);
         /* clips img tag corners */
         overflow: hidden;
         position: absolute;
         display: block;
 
         &:nth-child(1) {
-          width: (522/16)*1em;
-          height: (581/16)*1em;
+          width: toEm(522);
+          height: toEm(581);
           right: 0;
           top: 0;
         }
 
         &:nth-child(2) {
-          width: (414/16)*1em;
-          height: (400/16)*1em;
+          width: toEm(414);
+          height: toEm(400);
           background-color: #fff;
           box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
           /* 6px - 12px */
@@ -282,12 +281,11 @@
           object-fit: cover;
         }
       }
-
     }
 
     .cs-right {
       margin: auto;
-      max-width: ( 542 / 16 ) * 1rem;
+      max-width: toRem(542);
     }
 
     .cs-topper {
@@ -298,7 +296,7 @@
       letter-spacing: .1em;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: ( 4 / 16) * 1rem;
+      margin-bottom: toRem(4);
       display: block;
     }
 
@@ -307,7 +305,7 @@
       font-weight: 900;
       line-height: 1.2em;
       text-align: left;
-      max-width: ( 800 / 16) * 1rem;
+      max-width: toRem(800);
       margin: 0 auto 1rem;
       color: var(--headerColor);
       position: relative;
@@ -318,13 +316,13 @@
       line-height: 1.5em;
       text-align: left;
       width: 100%;
-      max-width: ( 750 / 16) * 1rem;
+      max-width: toRem(750);
       margin: 0 auto;
       margin-bottom: 1rem;
       color: var(--bodyTextColor);
 
       &:last-of-type {
-        margin-bottom: ( 32 / 16 ) * 1rem;
+        margin-bottom: toRem(32);
       }
     }
 
@@ -349,13 +347,13 @@
       line-height: 1.2em;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 0 0 ( 4 / 16) * 1rem;
+      margin: 0 0 toRem(4);
       color: var(--headerColor);
       display: block;
     }
 
     .cs-job {
-      font-size: ( 14 / 16) * 1rem;
+      font-size: toRem(14);
       line-height: 1.5em;
       color: #767676;
       display: block;
@@ -366,7 +364,7 @@
       width: clamp(3.75rem, 10vw, 8.5rem);
       height: auto;
       position: absolute;
-      bottom: ( 0 / 16) * 1rem;
+      bottom: toRem(0);
       /* 16px - 32px */
       right: clamp(1rem, 4vw, 2rem);
     }
@@ -379,7 +377,7 @@
     .cs-container {
       flex-flow: row;
       justify-content: space-between;
-      gap: ( 52 / 16 ) * 1rem;
+      gap: toRem(52); // Updated to use toRem for the gap
     }
 
     .cs-left {
@@ -453,7 +451,7 @@
 
     .cs-container {
       width: 100%;
-      max-width: (1322/16)*1em;
+      max-width: toEm(1322); // Using toEm for em conversion
       margin: auto;
     }
 
@@ -474,9 +472,9 @@
       font-weight: 700;
       line-height: 1.2em;
       text-align: center;
-      max-width: (621/16)*1rem;
+      max-width: toRem(621); // Using toRem for rem conversion
       margin: 0 auto;
-      margin-bottom: ( 40 / 16) * 1rem;
+      margin-bottom: toRem(40); // Replaced manual calculation with toRem
       color: var(--headerColor);
       position: relative;
     }
@@ -485,13 +483,13 @@
       /* used rem so it doesn't scale with the font size of on parent */
       font-size: min(1.1vw, 1em);
       width: 100%;
-      max-width: (1322/16)*1em;
+      max-width: toEm(1322); // Using toEm
       padding: 0;
-      margin: 0 auto (60 / 16) * 1rem;
+      margin: 0 auto toRem(60); // Replaced manual calculation with toRem
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      gap: (30/16)*1em;
+      gap: toEm(30); // Replaced manual calculation with toEm
     }
 
     .cs-row {
@@ -499,7 +497,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      gap: (30/16)*1em;
+      gap: toEm(30); // Replaced manual calculation with toEm
 
       picture {
         position: relative;
@@ -519,42 +517,41 @@
     .cs-picture {
       position: relative;
       display: block;
-
     }
 
     .cs-row-1 {
       picture {
         &:nth-of-type(1) {
-          width: (420/16)*1em;
-          height: (567/16)*1em;
+          width: toEm(420);
+          height: toEm(567);
         }
 
         &:nth-of-type(2) {
-          width: (420/16)*1em;
-          height: (629/16)*1em;
+          width: toEm(420);
+          height: toEm(629);
         }
 
         &:nth-of-type(3) {
-          width: (420/16)*1em;
-          height: ( 512 / 16 ) * 1em;
+          width: toEm(420);
+          height: toEm(512);
         }
       }
     }
     .cs-row-2 {
       picture {
         &:nth-of-type(1) {
-          width: (420/16)*1em;
-          height: (492/16)*1em;
+          width: toEm(420);
+          height: toEm(492);
         }
 
         &:nth-of-type(2) {
-          width: (420/16)*1em;
-          height: (517/16)*1em;
+          width: toEm(420);
+          height: toEm(517);
         }
 
         &:nth-of-type(3) {
-          width: (420/16)*1em;
-          height: (629/16)*1em;
+          width: toEm(420);
+          height: toEm(629);
         }
       }
     }
@@ -562,18 +559,18 @@
     .cs-row-3 {
       picture {
         &:nth-of-type(1) {
-          width: (420/16)*1em;
-          height: (625/16)*1em;
+          width: toEm(420);
+          height: toEm(625);
         }
 
         &:nth-of-type(2) {
-          width: (420/16)*1em;
-          height: (452/16)*1em;
+          width: toEm(420);
+          height: toEm(452);
         }
 
         &:nth-of-type(3) {
-          width: (420/16)*1em;
-          height: (629/16)*1em;
+          width: toEm(420);
+          height: toEm(629);
         }
       }
     }
@@ -605,7 +602,7 @@
 
     .cs-container {
       width: 100%;
-      max-width: (1104 / 16) * 1rem;
+      max-width: toRem(1104); // Using toRem for rem conversion
       margin: auto;
     }
 
@@ -626,7 +623,7 @@
       font-weight: 900;
       line-height: 1.2em;
       text-align: center;
-      max-width: ( 700 / 16) * 1rem;
+      max-width: toRem(700); // Replaced manual calculation with toRem
       margin: 0 auto 1rem;
       color: var(--headerColor);
       position: relative;
@@ -637,7 +634,7 @@
       line-height: 1.5rem;
       text-align: center;
       width: 100%;
-      max-width: (650 / 16) * 1rem;
+      max-width: toRem(650); // Replaced manual calculation with toRem
       margin: 0 auto;
       /* 88px - 104px */
       margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
@@ -654,14 +651,14 @@
       text-align: left;
       list-style: none;
       width: 100%;
-      max-width: ( 542 / 16 ) * 1rem;
-      margin: 0 auto ( 64 / 16) * 1rem;
+      max-width: toRem(542); // Replaced manual calculation with toRem
+      margin: 0 auto toRem(64); // Replaced manual calculation with toRem
       /* Padding L & R - 16px - 32px */
-      padding: ( 60 / 16) * 1rem clamp(1rem, 3.2vw, 2rem) 0;
+      padding: toRem(60) clamp(1rem, 3.2vw, 2rem) 0;
       /* 32px - 40px */
       padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
       box-shadow: 0 20px 39px 0 rgba(0, 0, 0, 0.05);
-      border-radius: ( 4 / 16) * 1rem;
+      border-radius: toRem(4); // Replaced manual calculation with toRem
       background: #fff;
       position: relative;
       display: flex;
@@ -677,17 +674,18 @@
     }
 
     .cs-item-img {
-      width: ( 80 / 16) * 1rem;
-      height: ( 80 / 16) * 1rem;
+      width: toRem(80); // Replaced manual calculation with toRem
+      height: toRem(80); // Replaced manual calculation with toRem
       position: absolute;
-      top: -( 40 / 16) * 1rem;
+      top: toRem(-40); // Replaced manual calculation with toRem
+      border-radius: 50%;
     }
 
     .cs-item-p {
       font-size: 1rem;
       line-height: 1.5em;
-      margin: 0 0 ( 20 / 16) * 1rem;
-      padding-bottom: ( 20 / 16) * 1rem;
+      margin: 0 0 toRem(20); // Replaced manual calculation with toRem
+      padding-bottom: toRem(20); // Replaced manual calculation with toRem
       color: var(--bodyTextColor);
       border-bottom: 1px solid #E8E9EC;
     }
@@ -703,14 +701,14 @@
     }
 
     .cs-desc {
-      font-size: ( 14 / 16) * 1rem;
+      font-size: toRem(14); // Replaced manual calculation with toRem
       font-weight: 400;
       color: var(--label);
       display: block;
     }
 
     .cs-item-stars {
-      width: (96/16)*1rem;
+      width: toRem(96); // Replaced manual calculation with toRem
       height: 1rem;
     }
   }
@@ -760,7 +758,7 @@
 @media only screen and (min-width: 0em) {
   #cta {
     position: relative;
-    padding: ( 50 / 16) * 1rem 0;
+    padding: toRem(50) 0; // Using toRem for rem conversion
 
     &:before {
       content: '';
@@ -803,7 +801,7 @@
       line-height: calc(58/48);
       color: #fff;
       position: relative;
-      margin-bottom: (36/16)*1rem;
+      margin-bottom: toRem(36); // Using toRem for rem conversion
       text-align: center;
     }
 
@@ -812,10 +810,9 @@
       text-align: center;
       opacity: 1;
       margin: auto;
-      margin-bottom: (36/16)*1rem;
+      margin-bottom: toRem(36); // Using toRem for rem conversion
       width: 96%;
-      max-width: ( 598 / 16) * 1rem;
-
+      max-width: toRem(598); // Using toRem for rem conversion
     }
   }
 }
@@ -823,7 +820,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
-    padding: ( 168 / 16) * 1rem 0;
+    padding: toRem(168) 0; // Using toRem for rem conversion
   }
 }
 
@@ -831,7 +828,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: ( 100 / 16) * 1rem;
+    margin-top: toRem(100); // Using toRem for rem conversion
 
     &:before {
       display: none;
@@ -841,8 +838,8 @@
       content: '';
       position: absolute;
       display: block;
-      height: ( 1108 / 16) * 1rem;
-      width: ( 2000 / 16) * 1rem;
+      height: toRem(1108); // Using toRem for rem conversion
+      width: toRem(2000); // Using toRem for rem conversion
       background: url("/assets/svgs/cta-squares.svg");
       background-size: contain;
       background-position: center;

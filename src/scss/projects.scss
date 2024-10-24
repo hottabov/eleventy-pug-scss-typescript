@@ -32,7 +32,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      gap: (30/16)*1em;
+      gap: toEm(30);
     }
 
     .cs-row {
@@ -286,7 +286,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: (100 / 16) * 1rem;
+    margin-top: toRem(100);
 
     &:before {
       display: none;
@@ -296,8 +296,8 @@
       content: '';
       position: absolute;
       display: block;
-      height: (1108 / 16) * 1rem;
-      width: (2000 / 16) * 1rem;
+      height: toRem(1108);
+      width: toRem(2000);
       background: url("/assets/svgs/cta-squares.svg");
       background-size: contain;
       background-position: center;
