@@ -2,7 +2,7 @@
 <---       Side By Side         -->
 <--- -------------------------- -*/
 
-@import "functions";
+@use 'functions' as *;
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -12,38 +12,38 @@
 
     .cs-container {
       width: 100%;
-      max-width: toRem(1280); // Using toRem for consistent rem conversion
+      max-width: toRem(1280);
       margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      row-gap: toRem(40); // Using toRem for consistent rem conversion
+      row-gap: toRem(40);
     }
 
     .cs-left {
       font-size: min(2.31vw, .7em);
-      width: toEm(631); // Using toEm for consistent em conversion
-      height: toRem(436); // Using toRem for consistent rem conversion
+      width: toEm(631);
+      height: toRem(436);
       position: relative;
     }
 
     picture {
-      border-radius: toEm(24); // Using toEm for consistent em conversion
+      border-radius: toEm(24);
       overflow: hidden;
       position: absolute;
       display: block;
 
       &:nth-child(1) {
-        width: toEm(522); // Using toEm for consistent em conversion
-        height: toEm(581); // Using toEm for consistent em conversion
+        width: toEm(522);
+        height: toEm(581);
         left: 0;
         top: 0;
       }
 
       &:nth-child(2) {
-        width: toEm(414); // Using toEm for consistent em conversion
-        height: toEm(400); // Using toEm for consistent em conversion
+        width: toEm(414);
+        height: toEm(400);
         background-color: #fff;
         box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
         border: clamp(.375em, 1.5vw, .75em) solid #fff;
@@ -63,7 +63,7 @@
 
     .cs-right {
       margin: auto;
-      max-width: toRem(542); // Using toRem for consistent rem conversion
+      max-width: toRem(542);
     }
 
     .cs-topper {
@@ -74,7 +74,7 @@
       letter-spacing: .1em;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: toRem(4); // Using toRem for consistent rem conversion
+      margin-bottom: toRem(4);
       display: block;
     }
 
@@ -83,7 +83,7 @@
       font-weight: 900;
       line-height: 1.2em;
       text-align: left;
-      max-width: toRem(800); // Using toRem for consistent rem conversion
+      max-width: toRem(800);
       margin: 0 auto 1rem;
       color: var(--headerColor);
       position: relative;
@@ -94,12 +94,12 @@
       line-height: 1.5em;
       text-align: left;
       width: 100%;
-      max-width: toRem(750); // Using toRem for consistent rem conversion
+      max-width: toRem(750);
       margin: 0 auto 1rem;
       color: var(--bodyTextColor);
 
       &:last-of-type {
-        margin-bottom: toRem(32); // Using toRem for consistent rem conversion
+        margin-bottom: toRem(32);
       }
     }
 
@@ -122,13 +122,13 @@
       line-height: 1.2em;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 0 0 toRem(4); // Using toRem for consistent rem conversion
+      margin: 0 0 toRem(4);
       color: var(--headerColor);
       display: block;
     }
 
     .cs-job {
-      font-size: toRem(14); // Using toRem for consistent rem conversion
+      font-size: toRem(14);
       line-height: 1.5em;
       color: #767676;
       display: block;
@@ -138,12 +138,12 @@
       width: clamp(3.75rem, 10vw, 8.5rem);
       height: auto;
       position: absolute;
-      bottom: toRem(0); // Using toRem for consistent rem conversion
+      bottom: toRem(0);
       right: clamp(1rem, 4vw, 2rem);
     }
 
     .button-solid {
-      margin-top: toRem(32); // Using toRem for consistent rem conversion
+      margin-top: toRem(32);
     }
   }
 }
@@ -154,7 +154,7 @@
     .cs-container {
       flex-flow: row;
       justify-content: space-between;
-      gap: toRem(52); // Using toRem for consistent rem conversion
+      gap: toRem(52);
     }
 
     .cs-left {
@@ -215,7 +215,7 @@
 @media only screen and (min-width: 0em) {
   #cta {
     position: relative;
-    padding: toRem(50) 0; // Using toRem for consistent rem conversion
+    padding: toRem(50) 0;
 
     &:before {
       content: '';
@@ -258,7 +258,7 @@
       line-height: calc(58 / 48);
       color: #fff;
       position: relative;
-      margin-bottom: toRem(36); // Using toRem for consistent rem conversion
+      margin-bottom: toRem(36);
       text-align: center;
     }
 
@@ -267,9 +267,9 @@
       text-align: center;
       opacity: 1;
       margin: auto;
-      margin-bottom: toRem(36); // Using toRem for consistent rem conversion
+      margin-bottom: toRem(36);
       width: 96%;
-      max-width: toRem(598); // Using toRem for consistent rem conversion
+      max-width: toRem(598);
     }
   }
 }
@@ -277,7 +277,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
-    padding: toRem(168) 0; // Using toRem for consistent rem conversion
+    padding: toRem(168) 0;
   }
 }
 
@@ -285,7 +285,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: toRem(100); // Using toRem for consistent rem conversion
+    margin-top: toRem(100);
 
     &:before {
       display: none;
@@ -295,8 +295,8 @@
       content: '';
       position: absolute;
       display: block;
-      height: toRem(1108); // Using toRem for consistent rem conversion
-      width: toRem(2000); // Using toRem for consistent rem conversion
+      height: toRem(1108);
+      width: toRem(2000);
       background: url("/assets/svgs/cta-squares.svg");
       background-size: contain;
       background-position: center;

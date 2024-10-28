@@ -3,7 +3,7 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 
-@import "functions";
+@use 'functions' as *;
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -203,7 +203,7 @@
 
       .cs-img {
         display: block;
-        margin-right: toRem(12); // Using toRem for rem conversion
+        margin-right: toRem(12);
       }
     }
   }
@@ -239,18 +239,6 @@
   }
 }
 
-/* Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25em) {
-  #hero {
-    //background: url("/images/landing-2000w.jpeg");
-    //background-size: cover;
-    //background-position: center;
-    //background-repeat: no-repeat;
-    ///* creates parallax effect on background image */
-    //background-attachment: fixed;
-  }
-}
-
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode {
@@ -272,26 +260,26 @@
 @media only screen and (min-width: 0em) {
 
   .services {
-    border-radius: toEm(5); // Using toEm for consistent em conversion
+    border-radius: toEm(5);
     margin: auto;
-    margin-top: toEm(-167); // Using toEm for consistent em conversion
+    margin-top: toEm(-167);
     position: relative;
     z-index: 100;
     background: #fff;
     width: 90%;
-    max-width: toEm(1320); // Using toEm for consistent em conversion
-    padding: toEm(50) toEm(20); // Using toEm for consistent em conversion
-    border-top: toRem(6) solid var(--primary); // Using toRem for rem conversion
+    max-width: toEm(1320);
+    padding: toEm(50) toEm(20);
+    border-top: toRem(6) solid var(--primary);
 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-    margin-bottom: toEm(50); // Using toEm for consistent em conversion
+    margin-bottom: toEm(50);
 
     .card {
       display: block;
       width: 100%;
-      max-width: toEm(357); // Using toEm for consistent em conversion
+      max-width: toEm(357);
       margin: auto;
-      margin-bottom: toEm(50); // Using toEm for consistent em conversion
+      margin-bottom: toEm(50);
 
       &:last-of-type {
         margin-bottom: 0;
@@ -299,33 +287,33 @@
 
       picture {
         background: var(--primary);
-        width: toEm(88); // Using toEm for consistent em conversion
-        height: toEm(88); // Using toEm for consistent em conversion
+        width: toEm(88);
+        height: toEm(88);
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
-        margin-bottom: toEm(23); // Using toEm for consistent em conversion
+        margin-bottom: toEm(23);
         border-radius: 50%;
 
         img {
-          width: toEm(48); // Using toEm for consistent em conversion
-          height: toEm(48); // Using toEm for consistent em conversion
+          width: toEm(48);
+          height: toEm(48);
         }
       }
 
       h2 {
         text-align: center;
-        font-size: toEm(32); // Using toEm for consistent em conversion
-        line-height: toEm(27); // Using toEm for consistent em conversion
+        font-size: toEm(32);
+        line-height: toEm(27);
         font-weight: 700;
         color: #1a1a1a;
-        margin-bottom: toEm(13); // Using toEm for consistent em conversion
+        margin-bottom: toEm(13);
       }
 
       p {
         text-align: center;
-        line-height: toEm(24); // Using toEm for consistent em conversion
+        line-height: toEm(24);
         width: 100%;
         //opacity: .9;
       }
@@ -344,7 +332,7 @@
 
     .card {
       margin: 0;
-      max-width: toEm(325); // Using toEm for consistent em conversion
+      max-width: toEm(325);
     }
   }
 }
@@ -352,10 +340,10 @@
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   .services {
-    padding: toEm(50) toEm(80); // Using toEm for consistent em conversion
+    padding: toEm(50) toEm(80);
 
     .card {
-      max-width: toEm(357); // Using toEm for consistent em conversion
+      max-width: toEm(357);
     }
   }
 }

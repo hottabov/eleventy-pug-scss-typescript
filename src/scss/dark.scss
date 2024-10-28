@@ -2,7 +2,7 @@
 <---      Core Dark Styles      -->
 <--- -------------------------- -*/
 
-@import "functions";
+@use 'functions' as *;
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
@@ -65,9 +65,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: toRem(60); // Using toRem for rem conversion
-    width: toRem(48); // Using toRem for rem conversion
-    height: toRem(48); // Using toRem for rem conversion
+    right: toRem(60);
+    width: toRem(48);
+    height: toRem(48);
     background: transparent;
     border: none;
     overflow: hidden;
@@ -79,8 +79,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: toRem(25); // Using toRem for rem conversion
-      height: toRem(25); // Using toRem for rem conversion
+      width: toRem(25);
+      height: toRem(25);
       pointer-events: none;
     }
 

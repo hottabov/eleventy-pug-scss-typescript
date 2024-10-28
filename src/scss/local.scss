@@ -1,7 +1,7 @@
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
-@import 'functions';
+@use 'functions' as *;
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -162,7 +162,7 @@
     .cs-container {
       flex-flow: row;
       justify-content: space-between;
-      gap: toRem(52); // Using toRem for rem conversion
+      gap: toRem(52);
     }
 
     .cs-left {
@@ -472,7 +472,7 @@
       font-weight: 700;
       line-height: 1.2em;
       text-align: center;
-      max-width: toRem(621); // Using toRem for rem conversion
+      max-width: toRem(621);
       margin: 0 auto;
       margin-bottom: toRem(40); // Replaced manual calculation with toRem
       color: var(--headerColor);
@@ -602,7 +602,7 @@
 
     .cs-container {
       width: 100%;
-      max-width: toRem(1104); // Using toRem for rem conversion
+      max-width: toRem(1104);
       margin: auto;
     }
 
@@ -758,7 +758,7 @@
 @media only screen and (min-width: 0em) {
   #cta {
     position: relative;
-    padding: toRem(50) 0; // Using toRem for rem conversion
+    padding: toRem(50) 0;
 
     &:before {
       content: '';
@@ -801,7 +801,7 @@
       line-height: calc(58/48);
       color: #fff;
       position: relative;
-      margin-bottom: toRem(36); // Using toRem for rem conversion
+      margin-bottom: toRem(36);
       text-align: center;
     }
 
@@ -810,9 +810,9 @@
       text-align: center;
       opacity: 1;
       margin: auto;
-      margin-bottom: toRem(36); // Using toRem for rem conversion
+      margin-bottom: toRem(36);
       width: 96%;
-      max-width: toRem(598); // Using toRem for rem conversion
+      max-width: toRem(598);
     }
   }
 }
@@ -820,7 +820,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
-    padding: toRem(168) 0; // Using toRem for rem conversion
+    padding: toRem(168) 0;
   }
 }
 
@@ -828,7 +828,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: toRem(100); // Using toRem for rem conversion
+    margin-top: toRem(100);
 
     &:before {
       display: none;
@@ -838,8 +838,8 @@
       content: '';
       position: absolute;
       display: block;
-      height: toRem(1108); // Using toRem for rem conversion
-      width: toRem(2000); // Using toRem for rem conversion
+      height: toRem(1108);
+      width: toRem(2000);
       background: url("/assets/svgs/cta-squares.svg");
       background-size: contain;
       background-position: center;

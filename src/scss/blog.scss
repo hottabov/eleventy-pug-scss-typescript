@@ -2,7 +2,7 @@
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
-@import "functions";
+@use 'functions' as *;
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -21,7 +21,7 @@
 
   .blog-container {
     width: 94%;
-    max-width: toEm(1120); // Using toEm for consistent em conversion
+    max-width: toEm(1120);
     margin: auto;
   }
 
@@ -34,10 +34,10 @@
     text-align: center;
     margin: auto;
     color: #fff;
-    min-width: toRem(150); // Using toRem for consistent rem conversion
-    padding: 0 toRem(24); // Using toRem for consistent rem conversion
+    min-width: toRem(150);
+    padding: 0 toRem(24);
     background-color: var(--bodyHeader);
-    border-radius: toRem(4); // Using toRem for consistent rem conversion
+    border-radius: toRem(4);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -56,7 +56,7 @@
       left: 0;
       box-sizing: border-box;
       z-index: -1;
-      border-radius: toRem(4); // Using toRem for consistent rem conversion
+      border-radius: toRem(4);
       transition: opacity .3s;
       border: 1px solid var(--bodyHeader);
       z-index: -1;
@@ -150,10 +150,10 @@
 @media only screen and (min-width: 64em) {
 
   #int-hero {
-    min-height: toRem(300); // Using toRem for rem conversion
+    min-height: toRem(300);
     height: auto;
-    padding-top: toRem(180); // Using toRem for rem conversion
-    padding-block-end: toRem(100); // Using toRem for rem conversion
+    padding-top: toRem(180);
+    padding-block-end: toRem(100);
     background-attachment: fixed;
     font-size: inherit;
   }
@@ -174,7 +174,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: toEm(50); // Using toEm for consistent em conversion
+    row-gap: toEm(50);
   }
 
   .main-content {
@@ -182,7 +182,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: toEm(50); // Using toEm for consistent em conversion
+    row-gap: toEm(50);
     width: 100%;
   }
 }
@@ -192,7 +192,7 @@
   .main-content-wrapper {
     flex-direction: row;
     align-items: flex-start;
-    column-gap: toEm(20); // Using toEm for consistent em conversion
+    column-gap: toEm(20);
   }
 }
 
@@ -204,7 +204,7 @@
 @media only screen and (min-width: 0em) {
   .recent-articles {
     overflow: hidden;
-    max-width: toEm(795); // Using toEm for consistent em conversion
+    max-width: toEm(795);
     flex: none;
     width: 100%;
 
@@ -213,7 +213,7 @@
       height: clamp(200px, 30vw, 400px);
       position: relative;
       display: block;
-      border-radius: toEm(8) toEm(8) 0 0; // Using toEm for consistent em conversion
+      border-radius: toEm(8) toEm(8) 0 0;
       overflow: hidden;
 
       img {
@@ -229,12 +229,12 @@
     .article-group {
       padding: clamp(30px, 5vw, 50px);
       border: 1px solid #ebebeb;
-      border-radius: 0 0 toEm(8) toEm(8); // Using toEm for consistent em conversion
+      border-radius: 0 0 toEm(8) toEm(8);
     }
 
     .blog-author-img {
-      width: toEm(32); // Using toEm for consistent em conversion
-      height: toEm(32); // Using toEm for consistent em conversion
+      width: toEm(32);
+      height: toEm(32);
       position: relative;
       display: block;
       border-radius: 50%;
@@ -254,11 +254,11 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: toRem(12); // Using toRem for consistent rem conversion
+      gap: toRem(12);
     }
 
     .blog-author, .blog-date {
-      font-size: toRem(14); // Using toRem for consistent rem conversion
+      font-size: toRem(14);
       color: var(--bodyText);
       line-height: 1.5em;
     }
@@ -282,7 +282,7 @@
     .blog-desc {
       font-size: 1rem;
       line-height: 1.5em;
-      margin: 1rem 0 toRem(32); // Using toRem for consistent rem conversion
+      margin: 1rem 0 toRem(32);
       color: var(--bodyText);
     }
 
@@ -294,10 +294,10 @@
       text-align: center;
       margin: auto;
       color: #fff;
-      min-width: toRem(150); // Using toRem for consistent rem conversion
-      padding: 0 toRem(24); // Using toRem for consistent rem conversion
+      min-width: toRem(150);
+      padding: 0 toRem(24);
       background-color: var(--bodyHeader);
-      border-radius: toRem(4); // Using toRem for consistent rem conversion
+      border-radius: toRem(4);
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -315,7 +315,7 @@
         left: 0;
         box-sizing: border-box;
         z-index: -1;
-        border-radius: toRem(4); // Using toRem for consistent rem conversion
+        border-radius: toRem(4);
         transition: opacity .3s;
         border: 1px solid var(--bodyHeader);
       }
@@ -334,7 +334,7 @@
 @media only screen and (min-width: 64em) {
   .recent-articles {
     .blog-h1 {
-      max-width: toEm(500); // Using toEm for consistent em conversion
+      max-width: toEm(500);
     }
   }
 }
@@ -387,19 +387,19 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-sidebar {
-    max-width: toEm(795); // Using toEm for consistent em conversion
+    max-width: toEm(795);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    row-gap: toEm(50); // Using toEm for consistent em conversion
+    row-gap: toEm(50);
 
     .blog-featured-group {
-      padding: toEm(35) toEm(30); // Using toEm for consistent em conversion
+      padding: toEm(35) toEm(30);
       border: 1px solid #ebebeb;
-      border-radius: toEm(8); // Using toEm for consistent em conversion
+      border-radius: toEm(8);
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -409,21 +409,21 @@
 
     .blog-header {
       display: block;
-      font-size: toEm(20); // Using toEm for consistent em conversion
+      font-size: toEm(20);
       color: var(--bodyHeader);
       font-weight: bold;
       text-align: center;
       position: relative;
-      margin-bottom: toRem(30); // Using toRem for consistent rem conversion
+      margin-bottom: toRem(30);
 
       &:after {
         content: '';
         position: relative;
         display: block;
-        width: toRem(50); // Using toRem for consistent rem conversion
+        width: toRem(50);
         height: 3px;
         background: var(--bodyHeader);
-        border-radius: toRem(4); // Using toRem for consistent rem conversion
+        border-radius: toRem(4);
         margin: 1rem auto;
       }
     }
@@ -432,10 +432,10 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      column-gap: toEm(24); // Using toEm for consistent em conversion
+      column-gap: toEm(24);
       width: 100%;
       text-decoration: none;
-      padding: toRem(20) 0; // Using toRem for consistent rem conversion
+      padding: toRem(20) 0;
       border-bottom: 1px solid #ebebeb;
 
       &:nth-of-type(1) {
@@ -453,8 +453,8 @@
       position: relative;
       border-radius: 50%;
       overflow: hidden;
-      width: toEm(60); // Using toEm for consistent em conversion
-      height: toEm(60); // Using toEm for consistent em conversion
+      width: toEm(60);
+      height: toEm(60);
       flex: none;
 
       img {
@@ -468,18 +468,17 @@
     }
 
     .feature-h3 {
-      font-size: toRem(15); // Using toRem for consistent rem conversion
+      font-size: toRem(15);
       line-height: 1.5em;
       color: var(--bodyHeader);
-      margin: 0;
-      margin-bottom: toRem(4); // Using toRem for consistent rem conversion
+      margin: 0 0 toRem(4);
       font-weight: 700;
       display: block;
       text-decoration: none;
     }
 
     .feature-date {
-      font-size: toRem(14); // Using toRem for consistent rem conversion
+      font-size: toRem(14);
       line-height: 1.5em;
       color: var(--bodyText);
       display: block;
@@ -490,7 +489,7 @@
 /* Tablet - 1024px */
 @media only screen and (min-width: 64em) {
   .blog-sidebar {
-    max-width: toEm(360); // Using toEm for consistent em conversion
+    max-width: toEm(360);
   }
 }
 
@@ -501,7 +500,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-article {
-    max-width: toEm(795); // Using toEm for consistent em conversion
+    max-width: toEm(795);
     width: 100%;
     display: block;
 
@@ -510,9 +509,9 @@
       height: clamp(200px, 30vw, 400px);
       position: relative;
       display: block;
-      border-radius: toEm(8); // Using toEm for consistent em conversion
+      border-radius: toEm(8);
       overflow: hidden;
-      margin-bottom: toEm(50); // Using toEm for consistent em conversion
+      margin-bottom: toEm(50);
 
       img {
         position: absolute;
@@ -525,8 +524,8 @@
     }
 
     .blog-author-img {
-      width: toEm(32); // Using toEm for consistent em conversion
-      height: toEm(32); // Using toEm for consistent em conversion
+      width: toEm(32);
+      height: toEm(32);
       position: relative;
       display: block;
       border-radius: 50%;
@@ -546,11 +545,11 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: toRem(12); // Using toRem for consistent rem conversion
+      gap: toRem(12);
     }
 
     .blog-author, .blog-date {
-      font-size: toRem(14); // Using toRem for consistent rem conversion
+      font-size: toRem(14);
       color: var(--bodyText);
       line-height: 1.5em;
     }
@@ -568,17 +567,17 @@
       line-height: 1.4em;
       font-weight: 700;
       margin: 1rem 0;
-      max-width: toRem(550); // Using toRem for consistent rem conversion
+      max-width: toRem(550);
       color: var(--bodyHeader);
     }
 
     #blog-content {
-      padding-top: toEm(25); // Using toEm for consistent em conversion
+      padding-top: toEm(25);
       margin-top: 1em;
       border-top: 1px solid #ebebeb;
 
       h2 {
-        font-size: toRem(28); // Using toRem for consistent rem conversion
+        font-size: toRem(28);
         line-height: 1.5em;
         color: var(--bodyHeader);
         font-weight: 700;
@@ -586,7 +585,7 @@
       }
 
       h3 {
-        font-size: toRem(24); // Using toRem for consistent rem conversion
+        font-size: toRem(24);
         line-height: 1.5em;
         color: var(--bodyHeader);
         font-weight: 700;
@@ -594,7 +593,7 @@
       }
 
       h4, h5, h6 {
-        font-size: toRem(20); // Using toRem for consistent rem conversion
+        font-size: toRem(20);
         line-height: 1.5em;
         color: var(--bodyHeader);
         font-weight: 700;
@@ -615,7 +614,7 @@
       }
 
       ul, ol {
-        padding-left: toRem(40); // Using toRem for consistent rem conversion
+        padding-left: toRem(40);
         margin: 0;
 
         li {
@@ -632,7 +631,7 @@
         height: auto;
         display: block;
         margin: 1rem 0;
-        border-radius: toRem(8); // Using toRem for consistent rem conversion
+        border-radius: toRem(8);
       }
     }
   }
@@ -653,7 +652,7 @@
 
     .cs-container {
       width: 100%;
-      max-width: toRem(1280); // Using toRem for consistent rem conversion
+      max-width: toRem(1280);
       margin: auto;
     }
 
@@ -681,9 +680,9 @@
       /* 14px - 16px */
       font-size: clamp(.875rem, 2.5vw, 1rem);
       line-height: 1.5em;
-      margin: 0 0 toRem(40); // Using toRem for consistent rem conversion
+      margin: 0 0 toRem(40);
       /* changes to 521px at desktop */
-      max-width: toRem(344); // Using toRem for consistent rem conversion
+      max-width: toRem(344);
       color: var(--bodyTextColorWhite);
     }
 
@@ -707,7 +706,7 @@
       font-size: 1rem;
       line-height: 1.5em;
       font-weight: 700;
-      margin-bottom: toRem(20); // Using toRem for consistent rem conversion
+      margin-bottom: toRem(20);
       color: var(--bodyTextColorWhite);
       position: relative;
       display: block;
@@ -724,13 +723,13 @@
         /* underline */
         content: '';
         width: 0;
-        height: toRem(2); // Using toRem for consistent rem conversion
+        height: toRem(2);
         /* current color of the parent */
         background: currentColor;
         opacity: 1;
         position: absolute;
         display: block;
-        bottom: toRem(-2); // Using toRem for consistent rem conversion
+        bottom: toRem(-2);
         left: 0;
         transition: width .3s;
       }
@@ -759,15 +758,15 @@
       display: inline-flex;
       justify-content: flex-start;
       flex-direction: column;
-      gap: toEm(12); // Using toEm for consistent em conversion
+      gap: toEm(12);
       position: absolute;
       right: 1em;
       bottom: 0;
     }
 
     .cs-social-link {
-      width: toRem(24); // Using toRem for consistent rem conversion
-      height: toRem(24); // Using toRem for consistent rem conversion
+      width: toRem(24);
+      height: toRem(24);
       background-color: #4E4B66;
       border-radius: 50%;
       display: flex;
@@ -779,12 +778,12 @@
 
       &:hover {
         background-color: var(--primary);
-        transform: translateY(toRem(-3)); // Using toRem for consistent rem conversion
+        transform: translateY(toRem(-3));
       }
     }
 
     .cs-social-img {
-      height: toRem(13); // Using toRem for consistent rem conversion
+      height: toRem(13);
       width: auto;
       display: block;
     }
@@ -823,7 +822,7 @@
     .cs-text {
       text-align: right;
       width: 50%;
-      max-width: toRem(521); // Using toRem for consistent rem conversion
+      max-width: toRem(521);
       margin: 0;
     }
 
