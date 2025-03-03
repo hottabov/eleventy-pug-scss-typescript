@@ -21,12 +21,12 @@ But fear not! Today, you’ll learn how to clean your gutters in just 20 minutes
 
 Before we begin, let’s talk about what you’ll need:
 
-* A **sturdy ladder** (not the wobbly one your uncle left in your garage in 1987)
-* **Gloves** (unless you enjoy the feeling of wet, decomposing leaves in your hands)
-* A **small trowel or scoop** (or, if you’re feeling primitive, just your hands)
-* A **bucket or a tarp** (for collecting the debris)
-* A **hose with a spray nozzle** (or, if you’re fancy, a pressure washer)
-* **Eye protection** (because trust me, there’s nothing quite like a surprise splash of 3-year-old gutter sludge to the face)
+* A **sturdy ladder** (not the wobbly one your uncle left in your garage in 1987)
+* **Gloves** (unless you enjoy the feeling of wet, decomposing leaves in your hands)
+* A **small trowel or scoop** (or, if you’re feeling primitive, just your hands)
+* A **bucket or a tarp** (for collecting the debris)
+* A **hose with a spray nozzle** (or, if you’re fancy, a pressure washer)
+* **Eye protection** (because trust me, there’s nothing quite like a surprise splash of 3-year-old gutter sludge to the face)
 
 Bonus: A dog. Not for cleaning purposes, but for moral support. My mate John tried cleaning his gutters last summer, and his dog, Bruno, sat at the bottom of the ladder, judging his every move. It helped.
 
@@ -52,7 +52,7 @@ Step back and look at your handiwork. This is the moment when you feel like a tr
 
 ### The Aftermath: What If You Don’t Clean Your Gutters?
 
-Now, you might be wondering, *what happens if I just… don’t clean my gutters?* Well, here’s what:
+Now, you might be wondering, *what happens if I just… don’t clean my gutters?* Well, here’s what:
 
 * Water overflows, soaking your walls and foundation. (Congratulations, you now have an indoor pond.)
 * Gutters sag and pull away from the house, turning into a high-end birdbath.
@@ -61,6 +61,6 @@ Now, you might be wondering, *what happens if I just… don’t clean my gutter
 
 ### The Easy Way Out: Let the Pros Handle It
 
-Let’s be honest: climbing a ladder, dealing with decomposing leaves, and risking an impromptu fall aren’t for everyone. That’s where we come in! At **Procare Home Improvements**, we specialize in **gutter cleaning that doesn’t involve you balancing on a ladder like a circus performer**.
+Let’s be honest: climbing a ladder, dealing with decomposing leaves, and risking an impromptu fall aren’t for everyone. That’s where we come in! At **Procare Home Improvements**, we specialize in **gutter cleaning that doesn’t involve you balancing on a ladder like a circus performer**.
 
 Let us take care of the hard work while you sip coffee and admire your dog. Contact us today, and we’ll ensure your gutters are spotless—no possum eviction notices needed.
