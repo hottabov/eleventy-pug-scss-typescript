@@ -3,7 +3,7 @@ import eleventyNavigation from "@11ty/eleventy-navigation";
 import {DateTime} from "luxon";
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 import path from 'path';
-import htmlMinifier from 'html-minifier';
+import { minify } from 'html-minifier-terser';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
 import sitemap from "@quasibit/eleventy-plugin-sitemap";
@@ -49,10 +49,10 @@ export default function (eleventyConfig) {
     if (isProd) {
         eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
             if (outputPath && outputPath.endsWith('.html')) {
-                return htmlMinifier.minify(content, {
+                return minify(content, {
                     useShortDoctype: true,
                     removeComments: true,
-                    collapseWhitespace: true
+                    collapseWhitespace: true,
                 });
             }
             return content;

@@ -47,7 +47,7 @@ Get ready to launch without breaking a sweat!
 - **Pug**: Templating engine that simplifies HTML.
 - **SCSS**: CSS preprocessor for writing cleaner and more maintainable CSS.
 - **TypeScript**: Type-safe JavaScript.
-- **CSS-mqpacker**: collects CSS from media queries, significantly reducing the code.
+- **Postcss-sort-media-queries**: collects CSS from media queries, significantly reducing the code.
 - **PostCSS & cssnano**: CSS post-processing and minification.
 - **Terser**: JavaScript minifier.
 - **Luxon**: Date and time formatting.
