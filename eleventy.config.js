@@ -15,7 +15,7 @@ export default function (eleventyConfig) {
         // which file extensions to process
         extensions: 'html',
         // optional, output image formats
-        formats: ['jpg', 'webp'],
+        formats: ['avif', 'webp', 'jpeg'],
         // optional, output image widths
         widths: [200, 400, 850, 1920, 2500],
         outputDir: 'public/images/',
@@ -37,7 +37,6 @@ export default function (eleventyConfig) {
     });
 
     eleventyConfig.addPlugin(pugPlugin, {
-        globals: 'filters',
         async: true,
         debug: true
     });
@@ -59,15 +58,6 @@ export default function (eleventyConfig) {
             return content;
         });
     }
-
-    // Minify CSS only in production
-    eleventyConfig.addTransform('postcss', async function (content, outputPath) {
-        if (isProd && outputPath && outputPath.endsWith('.css')) {
-            let output = await postcss([cssnano]).process(content, {from: outputPath});
-            return output.css;
-        }
-        return content;
-    });
 
     eleventyConfig.addCollection("navPages", function (collectionApi) {
         return collectionApi.getAll().filter((item) => {
@@ -112,7 +102,7 @@ export default function (eleventyConfig) {
     eleventyConfig.addPlugin(sitemap, {
         lastModifiedProperty: "modified",
         sitemap: {
-            hostname: "https://leonov.pp.ua", // replace with your website URL
+            hostname: process.env.SITE_URL || "https://leonov.pp.ua", // replace with your website URL
             changefreq: "weekly",
             priority: 0.8,
         }

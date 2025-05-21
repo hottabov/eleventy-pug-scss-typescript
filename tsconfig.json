@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "target": "ES5",
-    "module": "amd",
+    "target": "ES2018",
+    "module": "ESNext",
     "outDir": "./public/js",
     "rootDir": "./src/ts",
     "strict": true,
